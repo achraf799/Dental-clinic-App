@@ -8,6 +8,15 @@ require('dotenv').config(); // For environment variables
 const app = express();
 const port = 5000;
 
+// backend/server.js
+const corsOptions = {
+    origin: ['https://ecd-full-website-2.onrender.com'], // Only the production frontend URL
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+  };
+app.use(cors(corsOptions));
+  
+
 app.use(cors());
 app.use(bodyParser.json());
 

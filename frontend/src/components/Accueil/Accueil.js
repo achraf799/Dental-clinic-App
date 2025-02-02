@@ -17,11 +17,13 @@ function Accueil({ feedbacks }) {
   const [feedbacksState, setFeedbacksState] = useState(feedbacks);
 
   useEffect(() => {
-    // Fetch feedbacks from the backend
+    // Fetch feedbacks from the backend using fetch API
     const fetchFeedbacks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/feedbacks");
-        setFeedbacksState(response.data);
+        const response = await fetch('https://ecd-full-website-2.onrender.com/api/feedbacks');
+        const data = await response.json();
+        console.log(data); // Check if you're receiving data here
+        setFeedbacksState(data);
       } catch (error) {
         console.error("There was an error fetching feedbacks:", error);
       }
@@ -29,6 +31,7 @@ function Accueil({ feedbacks }) {
 
     fetchFeedbacks();
   }, []);
+
   const handleReservationClick = () => {
     console.log("Reservation button clicked!");
   };
