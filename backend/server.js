@@ -10,14 +10,16 @@ const port = 5000;
 
 // backend/server.js
 const corsOptions = {
-    origin: ['https://ecd-full-website-2.onrender.com'], // Only the production frontend URL
+    origin: ['https://ecd-full-website-2.onrender.com', 'https://ecd-full-website.vercel.app'], // Ajout de Vercel
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
-  };
+};
 app.use(cors(corsOptions));
-  
 
 app.use(cors());
+  
+
+// app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
@@ -49,7 +51,7 @@ app.get('/api/feedbacks', async (req, res) => {
 });
 
 // Route to add feedback
-app.post('/api/feedbacks', async (req, res) => {
+app.post('/api/feedbackspost', async (req, res) => {
   try {
     const { nom, avis, numberChoice } = req.body;
     const newFeedback = new Feedback({ nom, avis, numberChoice });
