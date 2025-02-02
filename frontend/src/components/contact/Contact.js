@@ -31,10 +31,10 @@ function Contact({ onAddFeedback }) {
     }
 
     const feedback = { ...formData, numberChoice: rating };
-
+    console.log("feedback: ", feedback);
     // Send feedback to the Node.js backend using axios
     try {
-      const response = await axios.post('https://ecd-full-website-2.onrender.com/api/feedbacks', feedback);
+      const response = await axios.post('https://ecd-full-website-2.onrender.com/api/feedbackspost', feedback);
       onAddFeedback(response.data); // Add the feedback to the parent state
       setFormData({ nom: "", avis: "", numberChoice: 0 }); // Reset form
       setRating(0); // Reset rating
@@ -100,7 +100,7 @@ function Contact({ onAddFeedback }) {
                 <button type="submit">Envoyez</button>
               </div>
             </form>
-
+            
             <div className="avis-bar"></div>
             <a href="https://maps.app.goo.gl/W221Ed5pegcBmxZf6" target="_blank">
               <div className="avis-googlemaps">

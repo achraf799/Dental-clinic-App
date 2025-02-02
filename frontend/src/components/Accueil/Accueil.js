@@ -122,7 +122,6 @@ function Accueil({ feedbacks }) {
       <div className="Accueil-container4">
         <h2>Avis clients</h2>
         <div className="avis-cards">
-        <div>
         {feedbacksState.map((feedback, index) => (
           <div className="card" key={index}>
             <h3>{feedback.nom}</h3>
@@ -139,7 +138,6 @@ function Accueil({ feedbacks }) {
             </div>
           </div>
         ))}
-      </div>
           <div className="card">
             <h3>Khaled</h3>
             <p>
