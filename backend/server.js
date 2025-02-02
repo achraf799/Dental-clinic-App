@@ -10,12 +10,14 @@ const port = 5000;
 
 // Allow only your frontend URL to access the backend
 const corsOptions = {
-    origin: 'https://ecd-full-website.vercel.app', // your frontend URL
-    methods: ['GET', 'POST'], // Allowed methods
-    allowedHeaders: ['Content-Type'], // Allowed headers
+    origin: ['https://ecd-full-website.vercel.app','https://ecd-full-website-2.onrender.com/api/feedbacks'],
+    
+    methods: ['GET', 'POST'], 
+    allowedHeaders: ['Content-Type'], 
+
   };
   
-  app.use(cors(corsOptions)); // Use the CORS configuration
+  app.use(cors(corsOptions)); 
   
 
 app.use(cors());
