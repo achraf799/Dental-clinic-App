@@ -1,0 +1,691 @@
+.Traitements {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Traitements-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    /* margin: 70px 0 20px 0; */
+    min-height: 70vh; /* Use vh unit for viewport height */
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.Traitements-container1 img {
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.Traitements-container11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* pad: 50px 0; */
+    /* height: 100vh; */
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0 30px 0;
+}
+
+.Traitements-text {
+    display: flex;
+    width: 627px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    z-index: 0;
+    margin-top: 50px;
+}
+
+.Traitements-text h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    margin: 0;
+}
+
+.Traitements-text h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 45px;
+    /* margin: 0; */
+    text-align: center;
+
+}
+
+.Traitements-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+/* Section de la citation */
+.Traitements-caption h3 {
+    display: flex;
+    width: 1135px;
+    height: 129px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: "Source Serif Pro";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    /* line-height: 48px; */
+    letter-spacing: 3.12px;
+    margin: 40px 0 ;
+    padding: 0;
+}
+
+/* Container pour la section "Les implants dentaires" */
+.Traitements-container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+.Traitements-container3 h1{
+text-align: left;
+color: #000;
+text-align: center;
+font-family: "Playfair Display";
+font-size: 36px;
+font-style: italic;
+font-weight: 700;
+line-height: 84px; /* 233.333% */
+letter-spacing: 4.68px;
+width: 80%;
+display: flex;
+margin: 10px;
+}
+
+.Traitements-container31 {display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 80%;
+    padding: 10 50px;
+}
+
+.Traitements-container31-img {
+    /* width: 200px;
+height: auto; */
+}
+.Traitements-container31-img img{
+    width: 300px;
+height: auto;
+}
+
+.Traitements-container31-text {
+    /* color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+margin: 0;
+/* line-height: 46px;  
+ */text-align: left;
+}
+.Traitements-container31-text p{
+color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 46px;
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+text-decoration: none;
+
+}
+
+.Traitements-container31-text span{
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 84px; /* 350% */
+    letter-spacing: 3.12px;
+    text-decoration: underline;
+    margin: 0   ;
+
+}
+.Traitements-container31-text h3{
+    color: #000;
+text-align: center;
+font-family: "Playfair Display";
+font-size: 24px;
+font-style: italic;
+font-weight: 700;
+line-height: 84px; /* 350% */
+letter-spacing: 3.12px;
+text-align: left;
+margin: 0;
+padding: 0;
+}
+
+/* Container pour la section "L'esthétique en dentisterie" */
+.Traitements-container4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.Traitements-container4 h1{
+    text-align: left;
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 84px; /* 233.333% */
+    letter-spacing: 4.68px;
+    width: 80%;
+    display: flex;
+    margin: 10px;
+}
+.Traitements-container41 {
+    display: flex;
+
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 80%;
+    padding: 10 50px;
+}
+
+.Traitements-container41-img {
+}
+.Traitements-container41-img img {
+    width: 400px;
+    height: auto;
+}
+.Traitements-container41-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    /* line-height: 46px;  */
+    text-align: left;
+    width: 700px;
+
+}
+.Traitements-container41-text p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-decoration: none;
+}
+
+/* Container pour la section "L'orthodontie invisible" */
+.Traitements-container5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.Traitements-container5 h1 {
+    text-align: center;
+    color: #000;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 4.68px;
+    width: 80%; 
+    margin: 10px; 
+}
+
+.Traitements-container51 {
+    display: flex;
+
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 80%;
+    padding: 10 50px;
+}
+
+
+.Traitements-container51-img {
+}
+.Traitements-container51-img img{
+    width: 400px;
+    height: auto;
+}
+
+.Traitements-container51-text {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0;
+    /* line-height: 46px;  */
+    text-align: left;
+    width: 700px;
+}
+.Traitements-container51-text p{
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 46px; */
+    
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-decoration: none;
+}
+
+
+.Traitements-container6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.Traitements-container6 h1 {
+    text-align: center;
+    color: #000;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 84px;
+    letter-spacing: 4.68px;
+    width: 80%; 
+    margin: 10px;
+}
+
+.Traitements-container6-row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    overflow: hidden;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.Traitements-container6-row1-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 600px;
+}
+
+.Traitements-container6-row1-text {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.Traitements-container6-row1-text h3 {
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    /* line-height: 84px; */
+    letter-spacing: 3.12px;
+    margin: 0;
+}
+
+.Traitements-container6-row1-text p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 35px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    text-decoration: none;
+}
+
+.Traitements-container6-row1-img {
+   
+}
+
+.Traitements-container6-row1-img img {
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.card-line {
+    width: 1px;
+height: 287px;
+background: #000;}
+
+.container6-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 200px;
+}
+.container6-line1 {
+    width: 295px;
+height: 1px;
+background: #000;
+}
+
+.Traitements-container7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+  }
+  
+  .Traitements-container7 h1 {
+    color: #000;
+text-align: center;
+font-family: "Playfair Display";
+font-size: 36px;
+font-style: italic;
+font-weight: 700;
+line-height: 69px; /* 191.667% */
+letter-spacing: 4.68px;
+margin: 0;
+  }
+  
+  .Traitements-container7-text {
+    color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 200% */
+text-align: left;
+
+  }
+  
+  .Traitements-container7-text li {
+    /* Style pour les éléments de la liste */
+  }
+  
+  .Traitements-container8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    overflow: hidden;
+    margin-bottom: 50px;  }
+  
+  .Traitements-container8 h3 {
+    color: #EA4335;
+    text-align: center;
+    font-family: "Source Serif Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 69px; /* 287.5% */
+    letter-spacing: 3.12px;  }
+  
+    .reservation-buttom-urgent {
+        width: 323px;
+        height: 65px;
+        flex-shrink: 0;
+        border-radius: 50px; /* Réduction pour un arrondi plus standard */
+        background: linear-gradient(90deg, #EA4335, #FF6347); /* Dégradé pour un effet dynamique */
+        border: none; /* Suppression des bordures par défaut */
+        color: #ffffff; /* Couleur du texte */
+        font-size: 18px; /* Taille du texte adaptée */
+        font-weight: bold; /* Texte en gras */
+        cursor: pointer; /* Indicateur interactif */
+        transition: transform 0.2s ease, filter 0.2s ease; /* Animation pour hover */
+        filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+      }
+      
+      .reservation-buttom-urgent:hover {
+        transform: scale(1.05); /* Légère mise en avant au survol */
+        filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.3)); /* Ombre plus prononcée */
+      }
+      
+      .reservation-buttom-urgent:active {
+        transform: scale(0.98); /* Réduction pour un effet d'appui */
+        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+        background: #d62f2c; /* Changement de couleur pour indiquer un clic */
+      }
+      
+  
+  .reservation-buttom-urgent p {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74.8px; /* 374% */
+  }
+  
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .footer-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    overflow: hidden;
+    width: 1318px;
+    /* height: 230.473px; */
+    padding: 20px 0;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  }
+  
+  .footer-container1 h2 {
+    color: var(--primary-color, #3167D9);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  margin: 0 60px;
+  }
+  .footer-container11 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-infos {
+    display: flex;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 10px;
+  }
+  
+  .footer-infos img {
+    /* Styles for images in the info sections */
+  }
+  
+  .footer-infos p {
+    width: 227px;
+  
+    color: var(--primary-color, #3167D9);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+  text-align: left;
+  }
+  
+  .footer-container2 {
+  flex-direction: row;
+    display: flex;
+  width: 90%;
+  height: 69px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 10px 0;
+  }
+  
+  .footer-element1 {
+    width: 79px;
+  height: 69px;
+  }
+  .footer-element1 img{
+    width: 79px;
+  height: 69px;
+  flex-shrink: 0;
+  }
+  
+  
+  .footer-element2 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: row;
+  
+  }
+  
+  .footer-element2 #menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: row;
+  }
+  
+  .footer-element2 #menuList li {
+    /* Individual list items */
+    display: flex;
+    width: 82px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-element2 #menuList li a {
+    
+  
+    color: var(--txt, #291B00);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  }
+  
+  .footer-element3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+  }
+  
+  .footer-element3 .footer-element31 {
+    /* Individual social media icon containers */
+  }
+  
+  .footer-element3 .footer-element31 svg {
+    /* Styles for the SVG icons */
+  }
+  
+  
+  
+  
