@@ -34,7 +34,7 @@ function Contact({ onAddFeedback }) {
     console.log("feedback: ", feedback);
     // Send feedback to the Node.js backend using axios
     try {
-      const response = await axios.post('https://ecd-full-website-2.onrender.com/api/feedbackspost', feedback);
+      const response = await axios.post('https://ecd-full-website-2.onrender.com/api/feedbacks', feedback);
       onAddFeedback(response.data); // Add the feedback to the parent state
       setFormData({ nom: "", avis: "", numberChoice: 0 }); // Reset form
       setRating(0); // Reset rating
