@@ -2,6 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios"; // Import axios for API calls
 import "./Style.css";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+
+
 
 import imgAccueil from "../../assets/cl15.png";
 import imgAccueil1 from "../../assets/cl1.jpg";
@@ -12,7 +20,6 @@ import cl19 from "../../assets/cl19.png";
 import cl20 from "../../assets/cl20.png";
 import logo from "../../assets/navlogo.png";
 
-
 function Accueil({ feedbacks }) {
   const [feedbacksState, setFeedbacksState] = useState(feedbacks);
 
@@ -20,7 +27,9 @@ function Accueil({ feedbacks }) {
     // Fetch feedbacks from the backend using fetch API
     const fetchFeedbacks = async () => {
       try {
-        const response = await fetch('https://ecd-full-website-2.onrender.com/api/feedbacks');
+        const response = await fetch(
+          "https://ecd-full-website-2.onrender.com/api/feedbacks"
+        );
         const data = await response.json();
         console.log(data); // Check if you're receiving data here
         setFeedbacksState(data);
@@ -35,8 +44,9 @@ function Accueil({ feedbacks }) {
   const handleReservationClick = () => {
     console.log("Reservation button clicked!");
   };
+
   
-  
+
   return (
     <div id="Accueil">
       <div className="Accueil-container1">
@@ -122,23 +132,41 @@ function Accueil({ feedbacks }) {
       <div className="Accueil-container4">
         <h2>Avis clients</h2>
         <div className="avis-cards">
-        {feedbacksState.map((feedback, index) => (
-          <div className="card" key={index}>
-            <h3>{feedback.nom}</h3>
-            <p>{feedback.avis}</p>
-            <div className="stars">
-              {[...Array(feedback.numberChoice)].map((_, i) => (
-                <svg key={i} xmlns="http://www.w3.org/2000/svg" width="27" height="26">
-                  <path
-                    d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
-                    fill="#44C6E9"
-                  />
+
+        <Swiper
+        slidesPerView={5}
+        spaceBetween={30}
+        centeredSlides={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+
+
+          {feedbacksState.map((feedback, index) => (
+            <SwiperSlide className="card" key={index}>
+              <h3>{feedback.nom}</h3>
+              <p>{feedback.avis}</p>
+              <div className="stars">
+                {[...Array(feedback.numberChoice)].map((_, i) => (
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="26"
+                  >
+                    <path
+                      d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
+                      fill="#44C6E9"
+                    />
                   </svg>
-              ))}
-            </div>
-          </div>
-        ))}
-          <div className="card">
+                ))}
+              </div>
+            </SwiperSlide>
+          ))}
+          <SwiperSlide className="card">
             <h3>Khaled</h3>
             <p>
               Un service impeccable,Je recommande vivement cette clinique pour
@@ -160,8 +188,8 @@ function Accueil({ feedbacks }) {
                 </svg>
               ))}
             </div>
-          </div>
-          <div className="card">
+          </SwiperSlide>
+          <SwiperSlide className="card">
             <h3>Walid</h3>
             <p>
               Grâce à l'Excellence Centre Dentaire, j'ai enfin retrouvé un
@@ -184,7 +212,13 @@ function Accueil({ feedbacks }) {
                 </svg>
               ))}
             </div>
-          </div>
+          </SwiperSlide>
+
+
+          </Swiper>
+
+
+
         </div>
         <div className="avis-lien">
           <a href="#Accueil">
