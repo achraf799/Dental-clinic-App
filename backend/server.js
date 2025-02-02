@@ -3,44 +3,39 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-require('dotenv').config(); // For environment variables
+require('dotenv').config();
 
 const app = express();
 const port = 5000;
 
-// backend/server.js
+// Configuration de CORS
 const corsOptions = {
-    origin: ['https://ecd-full-website-2.onrender.com', 'https://ecd-full-website.vercel.app'], // Ajout de Vercel
+    origin: ['https://ecd-full-website-m7yu-kq3z9890l-achraf799s-projects.vercel.app', 'https://ecd-full-website-2.onrender.com'], // Ajout des bonnes URLs
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 };
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); // Utilisation correcte de CORS
 
-app.use(cors());
-  
-
-// app.use(cors());
 app.use(bodyParser.json());
 
-// MongoDB Connection
-const mongoURI = process.env.MONGO_URI;
-mongoose.connect(mongoURI, {
+// Connexion MongoDB
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
   .then(() => console.log("MongoDB connected successfully"))
   .catch(err => console.error("MongoDB connection error:", err));
 
-// Define the Feedback Schema
+// Définition du schéma Feedback
 const feedbackSchema = new mongoose.Schema({
   nom: String,
   avis: String,
-  numberChoice: Number, // Rating (0 to 5)
+  numberChoice: Number, // Note de 0 à 5
 }, { timestamps: true });
 
 const Feedback = mongoose.model("Feedback", feedbackSchema);
 
-// Route to get all feedbacks
+// Route pour récupérer les feedbacks
 app.get('/api/feedbacks', async (req, res) => {
   try {
     const feedbacks = await Feedback.find();
@@ -50,8 +45,8 @@ app.get('/api/feedbacks', async (req, res) => {
   }
 });
 
-// Route to add feedback
-app.post('/api/feedbackspost', async (req, res) => {
+// Route pour ajouter un feedback (correction de l'URL)
+app.post('/api/feedbacks', async (req, res) => { // Changement de `/api/feedbackspost` vers `/api/feedbacks`
   try {
     const { nom, avis, numberChoice } = req.body;
     const newFeedback = new Feedback({ nom, avis, numberChoice });
@@ -62,6 +57,7 @@ app.post('/api/feedbackspost', async (req, res) => {
   }
 });
 
+// Démarrer le serveur
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
