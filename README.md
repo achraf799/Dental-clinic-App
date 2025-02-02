@@ -144,3 +144,32 @@ app.post('/api/feedbacks', async (req, res) => {
 app.listen(port, () => {
   console.log(`🚀 Server is running on http://localhost:${port}`);
 });
+//===========================================================================================================//
+// backend/server.js
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
+const app = express();
+const port = 5000;
+
+app.use(cors()); // Allow cross-origin requests
+app.use(bodyParser.json()); // Parse incoming JSON data
+
+let feedbacks = []; // Store feedbacks in-memory for now
+
+// Route to get all feedbacks
+app.get('/api/feedbacks', (req, res) => {
+  res.json(feedbacks);
+});
+
+// Route to add feedback
+app.post('/api/feedbacks', (req, res) => {
+  const newFeedback = req.body;
+  feedbacks.push(newFeedback);
+  res.status(201).json(newFeedback); // Return the new feedback
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
