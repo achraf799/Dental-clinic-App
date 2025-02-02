@@ -10,12 +10,11 @@ const port = 5000;
 
 // Configuration de CORS
 const corsOptions = {
-    origin: ['https://ecd-full-website-m7yu-kq3z9890l-achraf799s-projects.vercel.app', 'https://ecd-full-website-2.onrender.com'], // Ajout des bonnes URLs
+    origin: ['https://ecd-full-website.vercel.app/', 'https://ecd-full-website-2.onrender.com'], // Ajout des bonnes URLs
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 };
-app.use(cors(corsOptions)); // Utilisation correcte de CORS
-
+app.use(cors());
 app.use(bodyParser.json());
 
 // Connexion MongoDB
