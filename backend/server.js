@@ -12,8 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
-const mongoURI = "mongodb+srv://boudiafmouhammadachraf:ecd12345@cluster0.ceb7a.mongodb.net/feedbacks?retryWrites=true&w=majority&appName=Cluster0";
-
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
