@@ -1,0 +1,365 @@
+.Docteur1 {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Docteur1-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    /* margin: 70px 0 20px 0; */
+    min-height: 70vh; /* Use vh unit for viewport height */
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.Docteur1-container1 img {
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.Docteur1-container11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* pad: 50px 0; */
+    /* height: 100vh; */
+    width: 100%;
+    overflow: hidden;
+    padding: 100px 0 30px 0;
+}
+
+.Docteur1-text {
+    display: flex;
+    width: 627px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    z-index: 0;
+    margin-top: 50px;
+}
+
+.Docteur1-text h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    margin: 0;
+}
+
+.Docteur1-text h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 45px;
+    /* margin: 0; */
+    text-align: center;
+
+}
+
+.Docteur1-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.Docteur1-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.Docteur1-container2 h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #000;
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 84px; /* 210% */
+    letter-spacing: 5.2px;
+}
+
+.Docteur1-container2-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 80%;
+    padding: 10 50px;
+    gap: 60px;
+}
+
+.Docteur1-container2-row-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;}
+
+.Docteur1-container2-row-img img {
+    width: 322px;
+    height: auto;
+    flex-shrink: 0;
+
+    border-radius: 20px;
+  }
+
+  .reservation-buttom-dr1 {
+    width: 323px;
+    height: 65px;
+    flex-shrink: 0;
+    border-radius: 50px; 
+    background: linear-gradient(90deg, #006eff, #47a0ff); 
+    border: none; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: transform 0.2s ease, filter 0.2s ease;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
+  }
+  
+  .reservation-buttom-dr1:hover {
+    transform: scale(1.05); 
+    filter: drop-shadow(0px 6px 8px rgba(0, 0, 0, 0.3)); 
+  }
+  
+  .reservation-buttom-dr1:active {
+    transform: scale(0.98);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.2));
+    background: #009EFF; 
+  }
+  
+
+.reservation-buttom-dr1 p {
+color: #FFF;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+ /* 374% */
+}
+
+
+
+.Docteur1-container2-row-text {
+    text-align: left;
+    width: 80%;
+
+}
+
+.Docteur1-container2-row-text h2 {
+    color: #000;
+    font-family: "Crimson Text";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; /* 109.375% */
+    letter-spacing: 4.16px;
+
+}
+
+.Docteur1-container2-row-text ul {
+    /* Style for the list containing the doctor's details */
+}
+
+.Docteur1-container2-row-text li {
+    /* Style for each list item */
+}
+
+.Docteur1-container2-row-text li h3 {
+    color: #000;
+    font-family: "Crimson Text";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 3.12px;
+
+}
+
+.Docteur1-container2-row-text li p {
+    color: #000;
+    font-family: "Crimson Text";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3.12px;}
+
+
+
+
+/* Section de la citation */
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .footer-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    overflow: hidden;
+    width: 1318px;
+    /* height: 230.473px; */
+    padding: 20px 0;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: -5px 10px 30px 0px rgba(0, 0, 0, 0.08);
+  }
+  
+  .footer-container1 h2 {
+    color: var(--primary-color, #3167D9);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  margin: 0 60px;
+  }
+  .footer-container11 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-infos {
+    display: flex;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 10px;
+  }
+  
+  .footer-infos img {
+    /* Styles for images in the info sections */
+  }
+  
+  .footer-infos p {
+    width: 227px;
+  
+    color: var(--primary-color, #3167D9);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+  text-align: left;
+  }
+  
+  .footer-container2 {
+  flex-direction: row;
+    display: flex;
+  width: 90%;
+  height: 69px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0 10px 0;
+  }
+  
+  .footer-element1 {
+    width: 79px;
+  height: 69px;
+  }
+  .footer-element1 img{
+    width: 79px;
+  height: 69px;
+  flex-shrink: 0;
+  }
+  
+  
+  .footer-element2 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: row;
+  
+  }
+  
+  .footer-element2 #menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-direction: row;
+  }
+  
+  .footer-element2 #menuList li {
+    /* Individual list items */
+    display: flex;
+    width: 82px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-element2 #menuList li a {
+    
+  
+    color: var(--txt, #291B00);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  }
+  
+  .footer-element3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+  }
+  
+  .footer-element3 .footer-element31 {
+    /* Individual social media icon containers */
+  }
+  
+  .footer-element3 .footer-element31 svg {
+    /* Styles for the SVG icons */
+  }
+  
+  
+  
+  
