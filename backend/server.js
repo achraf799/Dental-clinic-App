@@ -8,6 +8,16 @@ require('dotenv').config(); // For environment variables
 const app = express();
 const port = 5000;
 
+// Allow only your frontend URL to access the backend
+const corsOptions = {
+    origin: 'https://ecd-full-website.vercel.app', // your frontend URL
+    methods: ['GET', 'POST'], // Allowed methods
+    allowedHeaders: ['Content-Type'], // Allowed headers
+  };
+  
+  app.use(cors(corsOptions)); // Use the CORS configuration
+  
+
 app.use(cors());
 app.use(bodyParser.json());
 
