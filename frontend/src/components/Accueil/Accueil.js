@@ -54,6 +54,11 @@ function Accueil({ feedbacks }) {
             </h1>
             <h2>Bienvenue Dans Notre clinique</h2>
           </div>
+          <a
+          href="https://wa.me/213663535252"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button
             className="reservation-buttom"
             onClick={handleReservationClick}
@@ -77,7 +82,7 @@ function Accueil({ feedbacks }) {
               />
             </svg>
             <p>Prenez votre rendez-vous</p>
-          </button>
+          </button></a>
         </div>
       </div>
       <div className="Accueil-container2">
@@ -119,7 +124,7 @@ function Accueil({ feedbacks }) {
           </div>
           <div className="Accueil-container31-col4">
             <img src={cl19} alt="Accueil" />
-            <a href="#Accueil">
+            <a href="/traitements">
               <img src={cl20} alt="Accueil" />
             </a>
           </div>
@@ -212,10 +217,10 @@ function Accueil({ feedbacks }) {
           </Swiper>
         </div>
         <div className="avis-lien">
-          <a href="#Accueil">
+          <a href="/Contact">
             <h3>Laissez votre avis </h3>{" "}
           </a>
-          <a href="#Accueil">
+          <a href="/Contact">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="42"
@@ -361,7 +366,11 @@ function Accueil({ feedbacks }) {
           </div>
           <div className="footer-element3">
             <div className="footer-element31">
-              <a href="#Accueil">
+            <a
+            href="https://www.google.com/maps/place/EXCELLENCE+centre+dentaire/@35.5534458,5.6058517,17z/data=!4m6!3m5!1s0x12f48f7f30de532d:0x72e472485b169e53!8m2!3d35.5534458!4d5.6085307!16s%2Fg%2F11rfsbk5q6?coh=225993&entry=tts&g_ep=EgoyMDI1MDEyMi4wIPu8ASoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -378,7 +387,8 @@ function Accueil({ feedbacks }) {
               </a>
             </div>
             <div className="footer-element31">
-              <a href="#Accueil">
+              <a href="https://www.instagram.com/dr_khaled_harous/" target="_blank"
+              rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -395,7 +405,8 @@ function Accueil({ feedbacks }) {
               </a>
             </div>
             <div className="footer-element31">
-              <a href="#Accueil">
+              <a href="https://www.facebook.com/excellencecentredentaire/" target="_blank"
+              rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -412,7 +423,9 @@ function Accueil({ feedbacks }) {
               </a>
             </div>
             <div className="footer-element31">
-              <a href="#Accueil">
+              <a href="https://wa.me/213663535252"
+              target="_blank"
+              rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
