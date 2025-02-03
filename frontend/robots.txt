@@ -1,0 +1,41 @@
+# Autorise tous les moteurs de recherche à explorer toutes les pages de votre site
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /user/
+
+# Autoriser tous les moteurs de recherche à explorer les fichiers de contenu
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Sitemaps
+Sitemap: https://votresite.com/sitemap.xml
+
+# Empêcher l'indexation de certaines pages (exemples)
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /order/
+
+# Fichiers temporaires
+Disallow: /temp/
+Disallow: /tmp/
+
+# Indiquer que le site est disponible en plusieurs langues
+Disallow: /fr/
+Disallow: /en/
+
+# Empêcher l'indexation des pages de résultats de recherche interne
+Disallow: /search/
+
+# Encourager la profondeur d'exploration
+Crawl-delay: 5
+
+# Spécifier des préférences pour certains moteurs de recherche (optionnel)
+User-agent: Googlebot
+Disallow: /noindex/
+
+User-agent: Bingbot
+Disallow: /noindex/

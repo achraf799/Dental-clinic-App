@@ -13,6 +13,7 @@ import Docteur4 from "./components/equipe/docteurs/Docteur4";
 import Docteur5 from "./components/equipe/docteurs/Docteur5";
 import Docteur6 from "./components/equipe/docteurs/Docteur6";
 import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop
+import { Helmet } from 'react-helmet';
 
 function App() {
   const [feedbacks, setFeedbacks] = useState([]);
@@ -66,6 +67,65 @@ function App() {
     <Router>
       <ScrollToTop /> {/* Scroll to top on route change */}
       <div className="App">
+      <Helmet>
+      <title>Excellence Dental Center</title>
+      <meta name="description" content="Welcome to the Excellence Dental Center. Your smile, our priority!" />
+      <meta property="og:title" content="Excellence Centre Dentaire" />
+      <meta property="og:description" content="Clinique dentaire moderne à Batna, offrant des soins de qualité." />
+      <meta property="og:image" content="URL_de_votre_image_pour_partage" />
+      <meta property="og:url" content="https://ecd-full-website.vercel.app/" />
+      <meta property="og:type" content="website" />
+    
+      <meta name="twitter:title" content="Excellence Centre Dentaire" />
+      <meta name="twitter:description" content="Clinique dentaire moderne à Batna, offrant des soins de qualité." />
+      <meta name="twitter:image" content="URL_de_votre_image_pour_partage" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Excellence Centre Dentaire",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ngaous, Route El Djnena, Batna",
+          "addressLocality": "Batna",
+          "addressRegion": "Batna",
+          "postalCode": "05000",
+          "addressCountry": "DZ"
+        },
+        "telephone": "+2130663535252",
+        "url": "https://ecd-full-website.vercel.app",
+        "sameAs": [
+          "https://maps.app.goo.gl/uyewzg2JedEQRjeF7",
+          "https://wa.me/2130663535252"
+        ],
+        "description": "Excellence Centre Dentaire - Clinique spécialisée dans les soins dentaires à Batna, offrant des services tels que l'implantologie, l'orthodontie, et les urgences dentaires."
+      }
+    
+      {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Excellence Centre Dentaire",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ngaous, Route El Djnena, Batna",
+          "addressLocality": "Batna",
+          "addressRegion": "Batna",
+          "postalCode": "05000",
+          "addressCountry": "DZ"
+        },
+        "telephone": "+2130663535252",
+        "url": "https://ecd-full-website.vercel.app",
+        "sameAs": [
+          "https://maps.app.goo.gl/uyewzg2JedEQRjeF7",
+          "https://wa.me/2130663535252"
+        ],
+        "description": "Excellence Centre Dentaire - Clinique spécialisée dans les soins dentaires à Batna, offrant des services tels que l'implantologie, l'orthodontie, et les urgences dentaires."
+      }
+    `}
+  </script>
+    </Helmet>
         <Navbar />
         <Routes>
           <Route path="/" element={<Accueil feedbacks={feedbacks} />} />
