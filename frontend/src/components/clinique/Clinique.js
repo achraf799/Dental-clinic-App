@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Style.css";
+import { Helmet } from 'react-helmet';
+
 import cl21 from "../../assets/cl21.png";
 import cl22 from "../../assets/cl22.png";
 import cl23 from "../../assets/cl23.png";
 import cl24 from "../../assets/cl24.png";
 import cl25 from "../../assets/cl25.png";
-import { EffectCoverflow, Pagination, Scrollbar, A11y } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { motion } from "framer-motion";
+
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
@@ -17,6 +17,17 @@ import logo from "../../assets/navlogo.png";
 function Clinique() {
   return (
     <div className="Clinique">
+    <Helmet>
+        <title>Excellence Centre Dentaire | Clinique dentaire spécialisée</title>
+        <meta name="description" content="Excellence Centre Dentaire, spécialisée en esthétique du sourire et implantologie, avec des équipements de pointe pour des soins de qualité." />
+        <meta name="keywords" content="clinique dentaire, implantologie, esthétique dentaire, orthodontie, soins dentaires, radiologie numérique, scanner intraoral, imprimante 3D, laboratoire numérique" />
+        <meta name="location" content="Paris, France" />
+        <meta property="og:title" content="Excellence Centre Dentaire" />
+        <meta property="og:description" content="Centre dentaire d'excellence, offrant des soins spécialisés en implantologie et esthétique du sourire à Paris." />
+        <meta property="og:image" content={cl21} />
+        <meta property="og:url" content="https://www.excellence-centre-dentaire.fr" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="Clinique-container1">
         <img src={cl21} alt="Clinique" />
         <div className="Clinique-container11">

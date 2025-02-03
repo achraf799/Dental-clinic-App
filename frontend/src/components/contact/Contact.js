@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import axios from "axios"; // Import axios for API calls
 import { Rating, Stack } from "@mui/material";
 import "./Style.css";
+import { Helmet } from 'react-helmet';
+
+
 import cl35 from "../../assets/cl35.png";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
@@ -47,6 +50,17 @@ function Contact({ onAddFeedback }) {
 
   return (
     <div className="Contact">
+    <Helmet>
+    <title>Contactez-nous - Excellence Centre Dentaire</title>
+    <meta name="description" content="Contactez Excellence Centre Dentaire pour vos avis et questions. Partagez votre expérience et aidez-nous à améliorer nos services." />
+    <meta name="keywords" content="contact, avis, feedback, centre dentaire, excellence, rendez-vous dentaire, Google Maps" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Contactez Excellence Centre Dentaire" />
+    <meta property="og:description" content="Contactez Excellence Centre Dentaire pour partager votre avis et poser vos questions." />
+    <meta property="og:image" content={cl35} />
+    <meta property="og:url" content="https://ecd-full-website-2.onrender.com/contact" />
+    <link rel="canonical" href="https://ecd-full-website-2.onrender.com/contact" />
+  </Helmet>
       <div className="Contact-container1">
         <img src={cl35} alt="Contact" />
         <div className="Contact-container11">
@@ -109,7 +123,8 @@ function Contact({ onAddFeedback }) {
             </form>
 
             <div className="avis-bar"></div>
-            <a href="https://maps.app.goo.gl/W221Ed5pegcBmxZf6" target="_blank">
+            <a href="https://maps.app.goo.gl/W221Ed5pegcBmxZf6" target="_blank"
+            rel="noopener noreferrer">
               <div className="avis-googlemaps">
                 <p>
                   Donnez-nous votre avis sur <span>Google Maps</span>, cela nous

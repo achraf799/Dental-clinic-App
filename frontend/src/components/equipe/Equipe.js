@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./Style.css";
+import { Helmet } from 'react-helmet';
+
 import cl26 from "../../assets/cl26.png";
 import dc2 from "../../assets/dc2.png";
 import dc1 from "../../assets/dc1.png";
@@ -18,7 +20,37 @@ import "swiper/css/scrollbar";
 
 function Equipe() {
   return (
+    <>
+    <Helmet>
+      <title>Notre Équipe - Experts en Soins Dentaires à Ngaous, Batna</title>
+      <meta
+        name="description"
+        content="Rencontrez notre équipe de dentistes qualifiés et expérimentés à Excellence Centre Dentaire. Découvrez leur expertise et les soins personnalisés qu'ils vous proposent à Ngaous, Batna."
+      />
+      <meta
+        name="keywords"
+        content="équipe dentaire, dentistes, Ngaous, Batna, Algérie, soins dentaires, implantologie, orthodontie"
+      />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Excellence Centre Dentaire",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Votre Adresse",
+            addressLocality: "Ngaous",
+            addressRegion: "Batna",
+            postalCode: "05000",
+            addressCountry: "Algérie",
+          },
+          telephone: "+213 123 456 789", // Remplace avec le vrai numéro
+          url: "https://ecd-full-website.vercel.app/equipe",
+        })}
+      </script>
+    </Helmet>
     <div className="Equipe">
+    
       <div className="Equipe-container1">
         <img src={cl26} alt="Equipe" />
         <div className="Equipe-container11">
@@ -303,7 +335,8 @@ function Equipe() {
                 </div>
               </div>
             </div>
-    </div>
+    </div>    </>
+
   );
 }
 

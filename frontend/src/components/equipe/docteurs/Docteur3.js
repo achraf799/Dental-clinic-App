@@ -3,6 +3,7 @@ import React from "react";
 import "./Style.css";
 import cl26 from "../../../assets/cl26.png";
 import dc4 from "../../../assets/dc4.png";
+import { Helmet } from 'react-helmet';
 
 import logo from "../../../assets/navlogo.png";
 
@@ -16,6 +17,40 @@ function Docteur1() {
     // Add navigation or other logic here
   };
   return (
+    <>
+    <Helmet>
+      <title>Dr Soumia Kharfalah - Omnipraticienne à Excellence Centre Dentaire</title>
+      <meta
+        name="description"
+        content="Découvrez le parcours et les compétences du Dr Soumia Kharfalah, omnipraticienne à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
+      />
+      <meta
+        name="keywords"
+        content="Dr Soumia Kharfalah, omnipraticienne, dentiste, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
+      />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Dr Soumia Kharfalah",
+          jobTitle: "Omnipraticienne",
+          worksFor: {
+            "@type": "MedicalClinic",
+            name: "Excellence Centre Dentaire",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Votre Adresse",
+              addressLocality: "Ngaous",
+              addressRegion: "Batna",
+              postalCode: "05000",
+              addressCountry: "Algérie",
+            },
+            telephone: "+213 663 535 252",
+            url: "https://ecd-full-website.vercel.app/docteurs/docteur1",
+          },
+        })}
+      </script>
+    </Helmet>
     <div className="Docteur1">
       <div className="Docteur1-container1">
         <img src={cl26} alt="Docteur1" />
@@ -271,7 +306,7 @@ function Docteur1() {
                 </div>
               </div>
             </div>
-    </div>
+    </div></>
   );
 }
 

@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./Style.css";
+import { Helmet } from 'react-helmet';
+
 import cl27 from "../../assets/cl27.png";
 import cl28 from "../../assets/cl28.png";
 import cl29 from "../../assets/cl29.png";
@@ -25,6 +27,11 @@ function Traitements() {
   };
   return (
     <div className="Traitements">
+    <Helmet>
+    <title>Traitements Dentaires - Excellence Centre Dentaire</title>
+    <meta name="description" content="Découvrez nos différents traitements dentaires proposés à l'Excellence Centre Dentaire. De l'implantation dentaire à l'orthodontie invisible, nous offrons des solutions personnalisées pour tous vos besoins." />
+    <meta name="keywords" content="traitements dentaires, implants, orthodontie, esthétique dentaire, parodontologie, Ngaous, Batna, Algérie" />
+  </Helmet>
       <div className="Traitements-container1">
         <img src={cl27} alt="Traitements" />
         <div className="Traitements-container11">

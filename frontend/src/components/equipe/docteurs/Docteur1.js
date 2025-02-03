@@ -3,6 +3,7 @@ import React from "react";
 import "./Style.css";
 import cl26 from "../../../assets/cl26.png";
 import dc2 from "../../../assets/dc2.png";
+import { Helmet } from 'react-helmet';
 
 import logo from "../../../assets/navlogo.png";
 
@@ -16,6 +17,34 @@ function Docteur1() {
         // Add navigation or other logic here
       };
   return (
+    <>
+      <Helmet>
+        <title>Dr. Khaled Harous - Implantologue à Ngaous, Batna</title>
+        <meta name="description" content="Découvrez le Dr. Khaled Harous, un implantologue expérimenté et fondateur de l'Excellence Centre Dentaire à Ngaous, Batna. Prenez rendez-vous pour des soins dentaires de qualité." />
+        <meta name="keywords" content="Dr Khaled Harous, implantologue, Ngaous, Batna, Algérie, soins dentaires, implants, esthétique dentaire" />
+        {/* Schema.org markup for a person */}
+        
+        <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Dr. Khaled Harous",
+            "jobTitle": "Implantologue",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Excellence Centre Dentaire"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Votre Adresse",
+              "addressLocality": "Ngaous",
+              "addressRegion": "Batna",
+              "postalCode": "05000",
+              "addressCountry": "Algérie"
+            }
+        })}
+      </script>
+      </Helmet>
     <div className="Docteur1">
       <div className="Docteur1-container1">
         <img src={cl26} alt="Docteur1" />
@@ -266,7 +295,8 @@ function Docteur1() {
                 </div>
               </div>
             </div>
-    </div>
+    </div>    </>
+
   );
 }
 
