@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios"; // Import axios for API calls
 import "./Style.css";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
-
-
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 import imgAccueil from "../../assets/cl15.png";
 import imgAccueil1 from "../../assets/cl1.jpg";
@@ -44,8 +42,6 @@ function Accueil({ feedbacks }) {
   const handleReservationClick = () => {
     console.log("Reservation button clicked!");
   };
-
-  
 
   return (
     <div id="Accueil">
@@ -132,30 +128,54 @@ function Accueil({ feedbacks }) {
       <div className="Accueil-container4">
         <h2>Avis clients</h2>
         <div className="avis-cards">
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={30}
+            loop={true}
+            centeredSlides={true}
+            // initialSlide={Math.floor(feedbacksState.length / 1)}
 
-        <Swiper
-        slidesPerView={5}
-        spaceBetween={30}
-        centeredSlides={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-
-
-          {feedbacksState.map((feedback, index) => (
-            <SwiperSlide className="card" key={index}>
-              <h3>{feedback.nom}</h3>
-              <p>{feedback.avis}</p>
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {feedbacksState.map((feedback, index) => (
+              <SwiperSlide className="card" key={index}>
+                <h3>{feedback.nom}</h3>
+                <p>{feedback.avis}</p>
+                <div className="stars">
+                  {[...Array(feedback.numberChoice)].map((_, i) => (
+                    <svg
+                      key={i}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="27"
+                      height="26"
+                    >
+                      <path
+                        d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
+                        fill="#44C6E9"
+                      />
+                    </svg>
+                  ))}
+                </div>
+              </SwiperSlide>
+            ))}
+            <SwiperSlide className="card">
+              <h3>Khaled</h3>
+              <p>
+                Un service impeccable,Je recommande vivement cette clinique pour
+                tous vos besoins dentaires !
+              </p>
               <div className="stars">
-                {[...Array(feedback.numberChoice)].map((_, i) => (
+                {[...Array(5)].map((_, index) => (
                   <svg
-                    key={i}
                     xmlns="http://www.w3.org/2000/svg"
                     width="27"
                     height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
                   >
                     <path
                       d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
@@ -165,60 +185,31 @@ function Accueil({ feedbacks }) {
                 ))}
               </div>
             </SwiperSlide>
-          ))}
-          <SwiperSlide className="card">
-            <h3>Khaled</h3>
-            <p>
-              Un service impeccable,Je recommande vivement cette clinique pour
-              tous vos besoins dentaires !
-            </p>
-            <div className="stars">
-              {[...Array(5)].map((_, index) => (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  fill="none"
-                >
-                  <path
-                    d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
-                    fill="#44C6E9"
-                  />
-                </svg>
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="card">
-            <h3>Walid</h3>
-            <p>
-              Grâce à l'Excellence Centre Dentaire, j'ai enfin retrouvé un
-              sourire éclatant. Les dentistes sont compétents, à l'écoute et
-              très doux. Je leur fais confiance les yeux fermés{" "}
-            </p>
-            <div className="stars">
-              {[...Array(5)].map((_, index) => (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  fill="none"
-                >
-                  <path
-                    d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
-                    fill="#44C6E9"
-                  />
-                </svg>
-              ))}
-            </div>
-          </SwiperSlide>
-
-
+            <SwiperSlide className="card">
+              <h3>Walid</h3>
+              <p>
+                Grâce à l'Excellence Centre Dentaire, j'ai enfin retrouvé un
+                sourire éclatant. Les dentistes sont compétents, à l'écoute et
+                très doux. Je leur fais confiance les yeux fermés{" "}
+              </p>
+              <div className="stars">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
+                      fill="#44C6E9"
+                    />
+                  </svg>
+                ))}
+              </div>
+            </SwiperSlide>
           </Swiper>
-
-
-
         </div>
         <div className="avis-lien">
           <a href="#Accueil">
