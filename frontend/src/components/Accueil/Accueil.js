@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios"; // Import axios for API calls
 import "./Style.css";
-import { Helmet } from 'react-helmet';
+
 import { Swiper, SwiperSlide } from "swiper/react";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -43,12 +45,6 @@ function Accueil({ feedbacks }) {
 
   return (
     <div id="Accueil">
-    <Helmet>
-        <title>Excellence Centre Dentaire - Soins dentaires de qualité à N'Gaous</title>
-        <meta name="description" content="Découvrez Excellence Centre Dentaire à N'Gaous. Soins de haute qualité avec des technologies avancées pour un sourire éclatant." />
-        <meta name="keywords" content="soins dentaires, implants dentaires, esthétique dentaire, clinique dentaire, N'Gaous, santé bucco-dentaire, avis clients, réservation clinique" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
       <div className="Accueil-container1">
         <img src={imgAccueil} alt="Accueil" />
         <div className="Accueil-container11">
@@ -138,7 +134,7 @@ function Accueil({ feedbacks }) {
         <h2>Avis clients</h2>
         <div className="avis-cards">
           <Swiper
-            slidesPerView={5}
+            slidesPerView={2}
             spaceBetween={30}
             loop={true}
             centeredSlides={true}

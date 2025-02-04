@@ -3,6 +3,7 @@
     overflow: hidden;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .Traitements-container1 {
@@ -686,6 +687,75 @@ text-align: left;
     /* Styles for the SVG icons */
   }
   
+    @media (max-width: 767px) {
   
+      .Traitements-container1  {
+        display: flex;
+        position: relative;
+        background-image: url("../../assets/cl27.png");
+        background-size: cover; /* Ensures the image covers the whole container */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat;
+      height: auto;
+    }
+    .Traitements-container1 img {
+      display: none;
+      
+  }
+    .Traitements-text {
+      width: 100%;
+      height: auto;
+      margin: 50px 20px;
+  }
+    
+  .Traitements-caption h3 {
+    width: auto;
+    height: auto;
+  
+  }
+  .Traitements-container31 {
+    flex-direction: column;
+}
+.Traitements-container41 {
+  flex-direction: column;
+}
+
+
+.Traitements-container51 {
+  flex-direction: column;
+
+}
+
+.Traitements-container6-row1 {
+  flex-direction: column;
+
+}
+.card-line {
+  display: none;
+}
+.Traitements-container6-row1-card {
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.Traitements-container6 {
+  flex-direction: column;
+  width: 100%;
+
+}
+.Traitements-container6-row1-text {
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+  }
   
   

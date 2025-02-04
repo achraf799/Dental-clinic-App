@@ -72,10 +72,10 @@ function Equipe() {
           </h3>
         </div>
         <div className="ceo">
-          <a href="/">
-            <img src={dc1} alt="Equipe" />
-          </a>{" "}
-          <h3>Dr Khaled HAROUS</h3>
+        <Link to="/docteurs/docteur1">
+        <img src={dc1} alt="Equipe" />
+        </Link>
+        <h3>Dr Khaled HAROUS</h3>
           <p>
             Implantologue
             <br />

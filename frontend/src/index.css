@@ -79,5 +79,33 @@ code {
   transform: scale(1.1) !important ;
   filter: drop-shadow(0px 4px 8px rgba(0, 104, 179, 0.67))!important;
 }
+@media (max-width: 767px) {
+  .ai-agent-chat-avatar-container {
+    right: 15px;
+    bottom: 100px !important;
+}
 
+.whatsapp-btn {
+  bottom: 160px;
+  right: 12px;
+
+}
+.map-btn {
+  bottom: 240px;
+  right: 12px;
+
+}
+
+}
+/* @media (max-width: 767px) {
+  *{
+    overflow-x: hidden !important;  
+    width: 100%;
+
+  }
+  html, body {
+    overflow-x: hidden !important; 
+    width: 100%;  
+  }
+} */
 

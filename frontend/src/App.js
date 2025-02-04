@@ -13,7 +13,7 @@ import Docteur4 from "./components/equipe/docteurs/Docteur4";
 import Docteur5 from "./components/equipe/docteurs/Docteur5";
 import Docteur6 from "./components/equipe/docteurs/Docteur6";
 import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop
-import { Helmet } from 'react-helmet'; // Import Helmet
+import { Helmet } from "react-helmet"; // Import Helmet
 
 function App() {
   const [feedbacks, setFeedbacks] = useState([]);
@@ -66,11 +66,19 @@ function App() {
   return (
     <Router>
       <ScrollToTop /> {/* Scroll to top on route change */}
-      <Helmet> 
+      <Helmet>
         {/* Global site-wide meta tags */}
-        <title>Excellence Centre Dentaire - Votre Clinique Dentaire en Algérie</title> 
-        <meta name="description" content="Bienvenue à Excellence Centre Dentaire, votre clinique dentaire de confiance. Nous offrons une gamme complète de soins dentaires de qualité supérieure pour toute la famille." /> 
-        <meta name="keywords" content="dentiste, soins dentaires, orthodontie, implants, esthétique dentaire, chirurgie orale, blanchiment, hygiène dentaire, urgence dentaire, Algerie" /> 
+        <title>
+          Excellence Centre Dentaire - Votre Clinique Dentaire en Algérie
+        </title>
+        <meta
+          name="description"
+          content="Bienvenue à Excellence Centre Dentaire, votre clinique dentaire de confiance. Nous offrons une gamme complète de soins dentaires de qualité supérieure pour toute la famille."
+        />
+        <meta
+          name="keywords"
+          content="dentiste, soins dentaires, orthodontie, implants, esthétique dentaire, chirurgie orale, blanchiment, hygiène dentaire, urgence dentaire, Algerie"
+        />
       </Helmet>
       <div className="App">
         <Navbar />
@@ -92,8 +100,7 @@ function App() {
         </Routes>
 
         {/* Div pour afficher le chatbot Jotform */}
-        <div
-          className="chatbot-btn"
+        <div className="chatbot-btn"
           id="JotformAgent-0194c8b6e5087e76bffd5df32a1da4d6f101"
         ></div>
         <a

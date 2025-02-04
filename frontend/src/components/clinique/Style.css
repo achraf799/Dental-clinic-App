@@ -354,5 +354,51 @@ text-align: left;
   }
   
   
+  @media (max-width: 767px) {
   
+    .Clinique-container1  {
+      display: flex;
+      position: relative;
+      background-image: url("../../assets/cl21.png");
+      background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .Contact-container1 img {
+    display: none;
+      }
+  .Clinique-text {
+    width: 100%;
+    height: auto;
+    margin: 50px 20px;
+}
+  
+.clinique-caption h3 {
+  width: auto;
+  height: auto;
+
+}
+
+.equippement1 {
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+.equippement1 img {
+  width: 400px;
+  height: auto;
+}
+.equippement2 h2 {
+  width: 400px;
+  font-size: 32px;
+  line-height: 54px;
+}
+.equippement3 {
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+  }
   

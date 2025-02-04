@@ -176,3 +176,80 @@ app.listen(port, () => {
 
 
 adfawdf
+
+    .Contact-container1 img {
+      width: fit-content;
+      display: flex;
+      position: absolute;
+      width: auto;
+      height: -webkit-fill-available;
+  }
+  .Contact-text {
+    width: 100%;
+    height: auto;
+    margin: 50px 20px;
+}
+  
+.Contact-caption h3 {
+  width: auto;
+  height: auto;
+
+}
+.Contact-container31 {
+  flex-direction: column;
+}
+.Contact-container41 {
+flex-direction: column;
+}
+
+
+.Contact-container51 {
+flex-direction: column;
+
+}
+  
+
+.avis-card {
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+
+}
+
+.avis-infos {
+  flex-direction: column;
+  width: 100%;
+}
+.avis-infos-form {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.avis-bar {
+  display: none;
+}
+.avis-googlemaps {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px;
+}
+.Contact-container3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  margin: 50px;
+  width: auto;
+  background-image: none;
+}
+
+
+
+
+
+
