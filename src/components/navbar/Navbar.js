@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Style.css';
 import navlogo from '../../assets/navlogo.png';
 import navIcon from '../../assets/navIcon.svg';
+import { Helmet } from 'react-helmet';
 
 function Navbar() {
   const [menuListOpen, setMenuListOpen] = useState(false);
@@ -17,6 +18,12 @@ function Navbar() {
 
   return (
     <div id="navbar" className="py-4">
+    <Helmet>
+        <title>Navbar - Excellence Centre Dentaire</title>
+        <meta name="description" content="Bienvenue au Centre Dentaire Excellence, offrant des soins dentaires de qualité et une équipe dédiée à votre santé bucco-dentaire." />
+        <meta name="keywords" content="dentiste, soins dentaires, clinique dentaire, équipe dentaire, traitements dentaires" />
+        <meta name="author" content="Excellence Centre Dentaire" />
+      </Helmet>
       <div className="navlogo mx-4">
         <img className="navlogoimg" src={navlogo} alt="Logo" />
         <div className="navlogotext">

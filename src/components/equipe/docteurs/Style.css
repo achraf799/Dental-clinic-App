@@ -362,4 +362,44 @@ font-style: normal;
   
   
   
+  @media (max-width: 767px) {
   
+    .Docteur1-container1  {
+      display: flex;
+      position: relative;
+      background-image: url("../../../assets/cl26.png");
+      background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .Docteur1-container1 img {
+    display: none;
+  }
+  .Docteur1-text {
+    width: 100%;
+    height: auto;
+    margin: 50px 20px;
+}
+  
+.Docteur1-caption h3 {
+  width: auto;
+  height: auto;
+
+}
+
+.Docteur1-container2-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 90%;
+  padding: 10 50px;
+  gap: 60px;
+}
+
+
+
+
+  }

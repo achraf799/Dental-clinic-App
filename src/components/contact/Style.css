@@ -504,5 +504,83 @@ margin: 0 10px;
   }
   
   
+  @media (max-width: 767px) {
   
+    .Contact-container1  {
+      display: flex;
+      position: relative;
+      background-image: url("../../assets/cl35.png");
+      background-size: cover; /* Ensures the image covers the whole container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .Contact-container1 img {
+display: none;
+  }
+  .Contact-text {
+    width: 100%;
+    height: auto;
+    margin: 50px 20px;
+}
+  
+.Contact-caption h3 {
+  width: auto;
+  height: auto;
+
+}
+.Contact-container31 {
+  flex-direction: column;
+}
+.Contact-container41 {
+flex-direction: column;
+}
+
+
+.Contact-container51 {
+flex-direction: column;
+
+}
+  
+
+.avis-card {
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+
+}
+
+.avis-infos {
+  flex-direction: column;
+  width: 100%;
+}
+.avis-infos-form {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.avis-bar {
+  display: none;
+}
+.avis-googlemaps {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 20px;
+}
+.Contact-container3 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  margin: 50px;
+  width: auto;
+  background-image: none;
+}
+
+}
   

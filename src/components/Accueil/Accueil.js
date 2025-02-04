@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios"; // Import axios for API calls
 import "./Style.css";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 import imgAccueil from "../../assets/cl15.png";
 import imgAccueil1 from "../../assets/cl1.jpg";
@@ -12,16 +18,19 @@ import cl19 from "../../assets/cl19.png";
 import cl20 from "../../assets/cl20.png";
 import logo from "../../assets/navlogo.png";
 
-
 function Accueil({ feedbacks }) {
   const [feedbacksState, setFeedbacksState] = useState(feedbacks);
 
   useEffect(() => {
-    // Fetch feedbacks from the backend
+    // Fetch feedbacks from the backend using fetch API
     const fetchFeedbacks = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/feedbacks");
-        setFeedbacksState(response.data);
+        const response = await fetch(
+          "https://ecd-full-website-2.onrender.com/api/feedbacks"
+        );
+        const data = await response.json();
+        console.log(data); // Check if you're receiving data here
+        setFeedbacksState(data);
       } catch (error) {
         console.error("There was an error fetching feedbacks:", error);
       }
@@ -29,11 +38,11 @@ function Accueil({ feedbacks }) {
 
     fetchFeedbacks();
   }, []);
+
   const handleReservationClick = () => {
     console.log("Reservation button clicked!");
   };
-  
-  
+
   return (
     <div id="Accueil">
       <div className="Accueil-container1">
@@ -45,6 +54,11 @@ function Accueil({ feedbacks }) {
             </h1>
             <h2>Bienvenue Dans Notre clinique</h2>
           </div>
+          <a
+          href="https://wa.me/213663535252"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button
             className="reservation-buttom"
             onClick={handleReservationClick}
@@ -68,7 +82,7 @@ function Accueil({ feedbacks }) {
               />
             </svg>
             <p>Prenez votre rendez-vous</p>
-          </button>
+          </button></a>
         </div>
       </div>
       <div className="Accueil-container2">
@@ -110,7 +124,7 @@ function Accueil({ feedbacks }) {
           </div>
           <div className="Accueil-container31-col4">
             <img src={cl19} alt="Accueil" />
-            <a href="#Accueil">
+            <a href="/traitements">
               <img src={cl20} alt="Accueil" />
             </a>
           </div>
@@ -119,77 +133,94 @@ function Accueil({ feedbacks }) {
       <div className="Accueil-container4">
         <h2>Avis clients</h2>
         <div className="avis-cards">
-        <div>
-        {feedbacksState.map((feedback, index) => (
-          <div className="card" key={index}>
-            <h3>{feedback.nom}</h3>
-            <p>{feedback.avis}</p>
-            <div className="stars">
-              {[...Array(feedback.numberChoice)].map((_, i) => (
-                <svg key={i} xmlns="http://www.w3.org/2000/svg" width="27" height="26">
-                  <path
-                    d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
-                    fill="#44C6E9"
-                  />
+          <Swiper
+            slidesPerView={2}
+            spaceBetween={30}
+            loop={true}
+            centeredSlides={true}
+            // initialSlide={Math.floor(feedbacksState.length / 1)}
+
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {feedbacksState.map((feedback, index) => (
+              <SwiperSlide className="card" key={index}>
+                <h3>{feedback.nom}</h3>
+                <p>{feedback.avis}</p>
+                <div className="stars">
+                  {[...Array(feedback.numberChoice)].map((_, i) => (
+                    <svg
+                      key={i}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="27"
+                      height="26"
+                    >
+                      <path
+                        d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
+                        fill="#44C6E9"
+                      />
+                    </svg>
+                  ))}
+                </div>
+              </SwiperSlide>
+            ))}
+            <SwiperSlide className="card">
+              <h3>Khaled</h3>
+              <p>
+                Un service impeccable,Je recommande vivement cette clinique pour
+                tous vos besoins dentaires !
+              </p>
+              <div className="stars">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
+                      fill="#44C6E9"
+                    />
                   </svg>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-          <div className="card">
-            <h3>Khaled</h3>
-            <p>
-              Un service impeccable,Je recommande vivement cette clinique pour
-              tous vos besoins dentaires !
-            </p>
-            <div className="stars">
-              {[...Array(5)].map((_, index) => (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  fill="none"
-                >
-                  <path
-                    d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
-                    fill="#44C6E9"
-                  />
-                </svg>
-              ))}
-            </div>
-          </div>
-          <div className="card">
-            <h3>Walid</h3>
-            <p>
-              Grâce à l'Excellence Centre Dentaire, j'ai enfin retrouvé un
-              sourire éclatant. Les dentistes sont compétents, à l'écoute et
-              très doux. Je leur fais confiance les yeux fermés{" "}
-            </p>
-            <div className="stars">
-              {[...Array(5)].map((_, index) => (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  fill="none"
-                >
-                  <path
-                    d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
-                    fill="#44C6E9"
-                  />
-                </svg>
-              ))}
-            </div>
-          </div>
+                ))}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="card">
+              <h3>Walid</h3>
+              <p>
+                Grâce à l'Excellence Centre Dentaire, j'ai enfin retrouvé un
+                sourire éclatant. Les dentistes sont compétents, à l'écoute et
+                très doux. Je leur fais confiance les yeux fermés{" "}
+              </p>
+              <div className="stars">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.6433 0.5L16.746 10.0492H26.7866L18.6636 15.9508L21.7663 25.5L13.6433 19.5983L5.52028 25.5L8.62299 15.9508L0.5 10.0492H10.5406L13.6433 0.5Z"
+                      fill="#44C6E9"
+                    />
+                  </svg>
+                ))}
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className="avis-lien">
-          <a href="#Accueil">
+          <a href="/Contact">
             <h3>Laissez votre avis </h3>{" "}
           </a>
-          <a href="#Accueil">
+          <a href="/Contact">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="42"
@@ -335,7 +366,11 @@ function Accueil({ feedbacks }) {
           </div>
           <div className="footer-element3">
             <div className="footer-element31">
-              <a href="#Accueil">
+            <a
+            href="https://www.google.com/maps/place/EXCELLENCE+centre+dentaire/@35.5534458,5.6058517,17z/data=!4m6!3m5!1s0x12f48f7f30de532d:0x72e472485b169e53!8m2!3d35.5534458!4d5.6085307!16s%2Fg%2F11rfsbk5q6?coh=225993&entry=tts&g_ep=EgoyMDI1MDEyMi4wIPu8ASoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -352,7 +387,8 @@ function Accueil({ feedbacks }) {
               </a>
             </div>
             <div className="footer-element31">
-              <a href="#Accueil">
+              <a href="https://www.instagram.com/dr_khaled_harous/" target="_blank"
+              rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -369,7 +405,8 @@ function Accueil({ feedbacks }) {
               </a>
             </div>
             <div className="footer-element31">
-              <a href="#Accueil">
+              <a href="https://www.facebook.com/excellencecentredentaire/" target="_blank"
+              rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
@@ -386,7 +423,9 @@ function Accueil({ feedbacks }) {
               </a>
             </div>
             <div className="footer-element31">
-              <a href="#Accueil">
+              <a href="https://wa.me/213663535252"
+              target="_blank"
+              rel="noopener noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="32"
