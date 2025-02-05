@@ -68,17 +68,51 @@ function App() {
       <ScrollToTop /> {/* Scroll to top on route change */}
       <Helmet>
         {/* Global site-wide meta tags */}
-        <title>
-          Excellence Centre Dentaire - Votre Clinique Dentaire en Algérie
-        </title>
-        <meta
-          name="description"
-          content="Bienvenue à Excellence Centre Dentaire, votre clinique dentaire de confiance. Nous offrons une gamme complète de soins dentaires de qualité supérieure pour toute la famille."
-        />
-        <meta
-          name="keywords"
-          content="dentiste, soins dentaires, orthodontie, implants, esthétique dentaire, chirurgie orale, blanchiment, hygiène dentaire, urgence dentaire, Algerie"
-        />
+        <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+      content="Bienvenue à Excellence Centre Dentaire, votre clinique dentaire de confiance. Nous offrons une gamme complète de soins dentaires de qualité supérieure pour toute la famille, dentiste N'gaous Batna Algerie" />
+    <meta name="keywords"
+      content="dentiste setif ,dentiste Algerie ,dentiste ngaous , dentiste n'gaous, dentiste Batna, Khaled harous, Khaled dentiste, dentiste, soins dentaires, orthodontie, implants, esthétique dentaire, chirurgie orale, blanchiment, hygiène dentaire, urgence dentaire, Algérie" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Excellence Centre Dentaire - Votre Clinique Dentaire en
+      Algérie</title>
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/ecd-logo.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <meta property="og:title"
+      content="Excellence Centre Dentaire - Dentiste à N'gaous, Batna, Algérie" />
+    <meta property="og:description"
+      content="Votre clinique dentaire spécialisée en soins dentaires, orthodontie, implants et urgences dentaires en Algérie. Contactez-nous au 0663 53 52 52." />
+    <meta property="og:image"
+      content="https://www.excellencecentredentaire.com/images/clinic.jpg" />
+    <meta property="og:url"
+      content="https://www.excellencecentredentaire.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:location"
+      content="https://www.google.com/maps/place/EXCELLENCE+centre+dentaire/@35.5534458,5.6058517,17z/data=!4m6!3m5!1s0x12f48f7f30de532d:0x72e472485b169e53!8m2!3d35.5534458!4d5.6085307!16s%2Fg%2F11rfsbk5q6?coh=225993&entry=tts&g_ep=EgoyMDI1MDEyMi4wIPu8ASoASAFQAw%3D%3D" />
+    <meta property="business:contact_data:phone_number" content="0663535252" />
+    <meta property="business:contact_data:locality"
+      content="N'gaous, Batna, Algérie" />
+
+    <meta property="og:location"
+      content="https://www.google.com/maps/place/EXCELLENCE+centre+dentaire/@35.5534458,5.6058517,17z/data=!4m6!3m5!1s0x12f48f7f30de532d:0x72e472485b169e53!8m2!3d35.5534458!4d5.6085307!16s%2Fg%2F11rfsbk5q6?coh=225993&entry=tts&g_ep=EgoyMDI1MDEyMi4wIPu8ASoASAFQAw%3D%3D" />
+    <meta property="og:instagram"
+      content="https://www.instagram.com/excellencecentredentaire/" />
+    <meta property="og:facebook"
+      content="https://www.facebook.com/excellencecentredentaire/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ExcellenceCentreDental" />
+    <meta name="twitter:title"
+      content="Excellence Centre Dentaire - Dentiste à N'gaous, Batna" />
+    <meta name="twitter:description"
+      content="Clinique dentaire de qualité offrant des soins dentaires, orthodontie, implants et urgences en Algérie." />
+    <meta name="twitter:image"
+      content="https://www.excellencecentredentaire.com/images/clinic.jpg" />
       </Helmet>
       <div className="App">
         <Navbar />
