@@ -113,6 +113,21 @@ function App() {
       content="Clinique dentaire de qualité offrant des soins dentaires, orthodontie, implants et urgences en Algérie." />
     <meta name="twitter:image"
       content="https://www.excellencecentredentaire.com/images/clinic.jpg" />
+      <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Your Company Name",
+        "url": "https://www.yourwebsite.com",
+        "logo": "https://www.yourwebsite.com/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/yourcompany",
+          "https://www.twitter.com/yourcompany"
+        ]
+      }
+    `}
+  </script>
       </Helmet>
       <div className="App">
         <Navbar />
