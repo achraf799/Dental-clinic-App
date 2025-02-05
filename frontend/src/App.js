@@ -115,17 +115,25 @@ function App() {
       content="https://www.excellencecentredentaire.com/images/clinic.jpg" />
       <script type="application/ld+json">
     {`
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Your Company Name",
-        "url": "https://www.yourwebsite.com",
-        "logo": "https://www.yourwebsite.com/logo.png",
-        "sameAs": [
-          "https://www.facebook.com/yourcompany",
-          "https://www.twitter.com/yourcompany"
-        ]
-      }
+      "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Excellence Centre Dentaire",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "N'gaous Batna Setif Ainezel Merouana, Aintouta",
+      "addressLocality": "N'gaous",
+      "addressRegion": "Batna",
+      "postalCode": "05000",
+      "addressCountry": "DZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "35.5534458",
+      "longitude": "5.6085307"
+    },
+    "telephone": "+213663535252",
+    "url": "https://www.excellencecentredentaire.com"
+  };
     `}
   </script>
       </Helmet>
