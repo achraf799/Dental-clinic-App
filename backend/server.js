@@ -21,10 +21,6 @@ app.use(bodyParser.json());
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  serverSelectionTimeoutMS: 5000,  // Wait 5 seconds before failing
-  socketTimeoutMS: 45000,          // Keep sockets open for 45 seconds
-  keepAlive: true,                  // Keep connection alive
-  keepAliveInitialDelay: 300000      // Send keep-alive ping every 5 minutes
 })
   .then(() => console.log("MongoDB connected successfully"))
   .catch(err => console.error("MongoDB connection error:", err));
@@ -63,8 +59,4 @@ app.post('/api/feedbacks', async (req, res) => { // Changement de `/api/feedback
 // Démarrer le serveur
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
-});
-mongoose.connection.on('disconnected', () => {
-  console.log("MongoDB disconnected! Trying to reconnect...");
-  mongoose.connect(process.env.MONGO_URI);
 });
