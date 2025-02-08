@@ -1,39 +1,39 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./Style.css";
-import dr26 from "../../../assets/dr26.png";
-import docteurimg from "../../../assets/dc7.png";
+import "./Styledr.css";
+import dr26 from "../../assets/dr26.png";
+import docteurimg from "../../assets/dc5.png";
 import { Helmet } from 'react-helmet';
 
-import logo from "../../../assets/navlogo.png";
+import logo from "../../assets/navlogo.png";
+
 
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function Docteur1() {
-  const handleReservationClick = () => {
-    console.log("Reservation button clicked!");
-    // Add navigation or other logic here
-  };
+    const handleReservationClick = () => {
+        console.log("Reservation button clicked!");
+        // Add navigation or other logic here
+      };
   return (
     <>
     <Helmet>
-      <title>Dr Fadhel Anfel - Dentiste à Excellence Centre Dentaire</title>
+      <title>Dr Rabeh Belaib - Dentiste et Designer Workflow à Excellence Centre Dentaire</title>
       <meta
         name="description"
-        content="Découvrez le parcours et les compétences du Dr Fadhel Anfel, dentiste à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
+        content="Découvrez le parcours et les compétences du Dr Rabeh Belaib, dentiste et designer workflow à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
       />
       <meta
         name="keywords"
-        content="Dr Fadhel Anfel, dentiste, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
+        content="Dr Rabeh Belaib, dentiste, designer workflow, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
       />
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Dr Fadhel Anfel",
-          jobTitle: "Dentiste",
+          name: "Dr Rabeh Belaib",
+          jobTitle: "Dentiste et Designer Workflow",
           worksFor: {
             "@type": "MedicalClinic",
             name: "Excellence Centre Dentaire",
@@ -62,36 +62,31 @@ function Docteur1() {
         </div>
       </div>
       <div className="Docteur1-container2">
-        <h1>Dr Fadhel Anfel</h1>
+        <h1>Dr Rabeh Belaib</h1>
         <div className="Docteur1-container2-row">
           <div className="Docteur1-container2-row-img">
             <img src={docteurimg} alt="Equipe" />
             <a
-              href="https://wa.me/213663535252"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button
-                className="reservation-buttom-dr1"
-                onClick={handleReservationClick}
-              >
-                <p>Prenez votre rendez-vous</p>
-              </button>
-            </a>
+          href="https://wa.me/213663535252"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+            <button
+            className="reservation-buttom-dr1"
+            onClick={handleReservationClick}
+          >
+            <p>Prenez votre rendez-vous</p>
+          </button></a>
           </div>
           <div className="Docteur1-container2-row-text">
-            <h2>Dr Fadhel Anfel</h2>
+            <h2>Dr Rabeh Belaib</h2>
             <ul>
               <li>
-                <h3>Dentiste</h3>
+                <h3>Dentiste et Designer Workflow</h3>
               </li>
               <li>
                 <p>
-                  Dr Fadhel Anfel est dentiste, passionné par la santé
-                  bucco-dentaire. Avec une approche préventive et des soins de
-                  haute qualité, il veille à assurer à ses patients des sourires
-                  sains et durables tout en mettant l'accent sur l'hygiène
-                  dentaire et les traitements esthétiques.
+                Dr Rabeh Belaib est dentiste et designer workflow, combinant ses compétences cliniques avec un savoir-faire en gestion des processus. Il met un accent particulier sur l’amélioration continue des soins dentaires, garantissant à chaque patient un traitement rapide et de qualité.
                 </p>
               </li>
               <li>

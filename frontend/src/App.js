@@ -6,12 +6,12 @@ import Clinique from "./components/clinique/Clinique";
 import Equipe from "./components/equipe/Equipe";
 import Traitements from "./components/traitements/Traitements";
 import Contact from "./components/contact/Contact";
-import Docteur1 from "./components/equipe/docteurs/Docteur1";
-import Docteur2 from "./components/equipe/docteurs/Docteur2";
-import Docteur3 from "./components/equipe/docteurs/Docteur3";
-import Docteur4 from "./components/equipe/docteurs/Docteur4";
-import Docteur5 from "./components/equipe/docteurs/Docteur5";
-import Docteur6 from "./components/equipe/docteurs/Docteur6";
+import Docteur1 from "./components/equipe/Docteur1";
+import Docteur2 from "./components/equipe/Docteur2";
+import Docteur3 from "./components/equipe/Docteur3";
+import Docteur4 from "./components/equipe/Docteur4";
+import Docteur5 from "./components/equipe/Docteur5";
+import Docteur6 from "./components/equipe/Docteur6";
 import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop
 import { Helmet } from "react-helmet"; // Import Helmet
 
@@ -165,12 +165,12 @@ function App() {
           <Route path="/equipe" element={<Equipe />} />
           <Route path="/traitements" element={<Traitements />} />
           <Route path="/contact" element={<Contact onAddFeedback={addFeedback} />}/>
-          <Route path="/docteurs/docteur1" element={<Docteur1 />} />
-          <Route path="/docteurs/docteur2" element={<Docteur2 />} />
-          <Route path="/docteurs/docteur3" element={<Docteur3 />} />
-          <Route path="/docteurs/docteur4" element={<Docteur4 />} />
-          <Route path="/docteurs/docteur5" element={<Docteur5 />} />
-          <Route path="/docteurs/docteur6" element={<Docteur6 />} />
+          <Route path="docteur1" element={<Docteur1 />} />
+          <Route path="docteur2" element={<Docteur2 />} />
+          <Route path="docteur3" element={<Docteur3 />} />
+          <Route path="docteur4" element={<Docteur4 />} />
+          <Route path="docteur5" element={<Docteur5 />} />
+          <Route path="docteur6" element={<Docteur6 />} />
         </Routes>
 
         {/* Div pour afficher le chatbot Jotform */}

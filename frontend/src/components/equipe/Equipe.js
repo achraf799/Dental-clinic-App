@@ -87,7 +87,7 @@ function Equipe() {
       <div className="equipe-elem">
         <div className="equipe-row">
           <div className="docteur">
-            <Link to="/docteurs/docteur1">
+            <Link to="/docteur1">
               <img src={dc2} alt="Equipe" />
             </Link>
             <h3>Dr Khaled HAROUS</h3>
@@ -99,14 +99,14 @@ function Equipe() {
             </p>
           </div>
           <div className="docteur">
-            <Link to="/docteurs/docteur2">
+            <Link to="/docteur2">
               <img src={dc3} alt="Equipe" />
             </Link>{" "}
             <h3>Dr Nahed AMZEL</h3>
             <p>Omnipraticienne</p>
           </div>
           <div className="docteur">
-            <Link to="/docteurs/docteur3">
+            <Link to="/docteur3">
               <img src={dc4} alt="Equipe" />
             </Link>{" "}
             <h3>Dr Soumia KHARFALAH</h3>
@@ -115,21 +115,21 @@ function Equipe() {
         </div>
         <div className="equipe-row">
           <div className="docteur">
-            <Link to="/docteurs/docteur4">
+            <Link to="/docteur4">
               <img src={dc5} alt="Equipe" />
             </Link>{" "}
             <h3>Dr Rabeh BELAIB</h3>
             <p>Dentiste</p>
           </div>
           <div className="docteur">
-            <Link to="/docteurs/docteur5">
+            <Link to="/docteur5">
               <img src={dc6} alt="Equipe" />
             </Link>{" "}
             <h3>Dr Wiem LEKHMAMARA</h3>
             <p>Dentiste</p>
           </div>
           <div className="docteur">
-            <Link to="/docteurs/docteur6">
+            <Link to="/docteur6">
               <img src={dc7} alt="Equipe" />
             </Link>
             <h3>Dr Anfel FADHEL</h3>

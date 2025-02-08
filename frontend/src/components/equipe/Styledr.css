@@ -367,7 +367,7 @@ font-style: normal;
     .Docteur1-container1  {
       display: flex;
       position: relative;
-      background-image: url("../../../assets/cl26.png");
+      background-image: url("../../assets/cl26.png");
       background-size: cover; /* Ensures the image covers the whole container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;

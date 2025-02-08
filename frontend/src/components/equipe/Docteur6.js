@@ -1,11 +1,11 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./Style.css";
-import dr26 from "../../../assets/dr26.png";
-import docteurimg from "../../../assets/dc3.png";
+import "./Styledr.css";
+import dr26 from "../../assets/dr26.png";
+import docteurimg from "../../assets/dc6.png";
 import { Helmet } from 'react-helmet';
 
-import logo from "../../../assets/navlogo.png";
+import logo from "../../assets/navlogo.png";
+
 
 import "swiper/css/bundle";
 import "swiper/css/pagination";
@@ -19,21 +19,21 @@ function Docteur1() {
   return (
     <>
     <Helmet>
-      <title>Dr Nahed Amzel - Omnipraticienne à Excellence Centre Dentaire</title>
+      <title>Dr Fadhel Anfel - Dentiste à Excellence Centre Dentaire</title>
       <meta
         name="description"
-        content="Découvrez le parcours et les compétences du Dr Nahed Amzel, omnipraticienne à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
+        content="Découvrez le parcours et les compétences du Dr Fadhel Anfel, dentiste à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
       />
       <meta
         name="keywords"
-        content="Dr Nahed Amzel, omnipraticienne, dentiste, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
+        content="Dr Fadhel Anfel, dentiste, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
       />
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Dr Nahed Amzel",
-          jobTitle: "Omnipraticienne",
+          name: "Dr Fadhel Anfel",
+          jobTitle: "Dentiste",
           worksFor: {
             "@type": "MedicalClinic",
             name: "Excellence Centre Dentaire",
@@ -62,7 +62,7 @@ function Docteur1() {
         </div>
       </div>
       <div className="Docteur1-container2">
-        <h1>Dr Nahed Amzel</h1>
+        <h1>Dr Fadhel Anfel</h1>
         <div className="Docteur1-container2-row">
           <div className="Docteur1-container2-row-img">
             <img src={docteurimg} alt="Equipe" />
@@ -80,27 +80,27 @@ function Docteur1() {
             </a>
           </div>
           <div className="Docteur1-container2-row-text">
-            <h2>Dr Nahed Amzel</h2>
+            <h2>Dr Fadhel Anfel</h2>
             <ul>
               <li>
-                <h3>Omnipraticienne</h3>
+                <h3>Dentiste</h3>
               </li>
               <li>
                 <p>
-                  Dr Nahed Amzel est une omnipraticienne passionnée par la
-                  médecine générale. Elle se distingue par son écoute attentive
-                  et sa capacité à offrir des soins complets et adaptés à chaque
-                  patient, avec un focus particulier sur la prévention et le
-                  suivi médical personnalisé.
+                  Dr Fadhel Anfel est dentiste, passionné par la santé
+                  bucco-dentaire. Avec une approche préventive et des soins de
+                  haute qualité, il veille à assurer à ses patients des sourires
+                  sains et durables tout en mettant l'accent sur l'hygiène
+                  dentaire et les traitements esthétiques.
                 </p>
               </li>
               <li>
                 <h3>Disponibilités:</h3>
                 <p>
                   {" "}
-                  Les jours de travail: Tous les jours sauf mardi
+                  Les jours de travail: Tous les jours
                   <br />
-                  Horaires de travail: De 08.00 a 15.30
+                  Horaires de travail: De 08.00 a 18.00
                 </p>
               </li>
             </ul>

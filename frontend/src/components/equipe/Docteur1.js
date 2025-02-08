@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./Style.css";
-import dr26 from "../../../assets/dr26.png";
-import docteurimg from "../../../assets/dc5.png";
+import "./Styledr.css";
+import dr26 from "../../assets/dr26.png";
+import docteurimg from "../../assets/dc2.png";
 import { Helmet } from 'react-helmet';
 
-import logo from "../../../assets/navlogo.png";
+import logo from "../../assets/navlogo.png";
 
 import "swiper/css/bundle";
 import "swiper/css/pagination";
@@ -18,39 +18,33 @@ function Docteur1() {
       };
   return (
     <>
-    <Helmet>
-      <title>Dr Rabeh Belaib - Dentiste et Designer Workflow à Excellence Centre Dentaire</title>
-      <meta
-        name="description"
-        content="Découvrez le parcours et les compétences du Dr Rabeh Belaib, dentiste et designer workflow à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
-      />
-      <meta
-        name="keywords"
-        content="Dr Rabeh Belaib, dentiste, designer workflow, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
-      />
-      <script type="application/ld+json">
+      <Helmet>
+        <title>Dr. Khaled Harous - Implantologue à Ngaous, Batna</title>
+        <meta name="description" content="Découvrez le Dr. Khaled Harous, un implantologue expérimenté et fondateur de l'Excellence Centre Dentaire à Ngaous, Batna. Prenez rendez-vous pour des soins dentaires de qualité." />
+        <meta name="keywords" content="Dr Khaled Harous, implantologue, Ngaous, Batna, Algérie, soins dentaires, implants, esthétique dentaire" />
+        {/* Schema.org markup for a person */}
+        
+        <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Person",
-          name: "Dr Rabeh Belaib",
-          jobTitle: "Dentiste et Designer Workflow",
-          worksFor: {
-            "@type": "MedicalClinic",
-            name: "Excellence Centre Dentaire",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Votre Adresse",
-              addressLocality: "Ngaous",
-              addressRegion: "Batna",
-              postalCode: "05000",
-              addressCountry: "Algérie",
+            "@type": "Person",
+            "name": "Dr. Khaled Harous",
+            "jobTitle": "Implantologue",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Excellence Centre Dentaire"
             },
-            telephone: "+213 663 535 252",
-            url: "https://ecd-full-website.vercel.app/docteurs/docteur1",
-          },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Votre Adresse",
+              "addressLocality": "Ngaous",
+              "addressRegion": "Batna",
+              "postalCode": "05000",
+              "addressCountry": "Algérie"
+            }
         })}
       </script>
-    </Helmet>
+      </Helmet>
     <div className="Docteur1">
       <div className="Docteur1-container1">
         <img src={dr26} alt="Docteur1" />
@@ -62,7 +56,7 @@ function Docteur1() {
         </div>
       </div>
       <div className="Docteur1-container2">
-        <h1>Dr Rabeh Belaib</h1>
+        <h1>Dr Khaled HAROUS</h1>
         <div className="Docteur1-container2-row">
           <div className="Docteur1-container2-row-img">
             <img src={docteurimg} alt="Equipe" />
@@ -79,21 +73,21 @@ function Docteur1() {
           </button></a>
           </div>
           <div className="Docteur1-container2-row-text">
-            <h2>Dr Rabeh Belaib</h2>
+            <h2>Dr Khaled HAROUS</h2>
             <ul>
               <li>
-                <h3>Dentiste et Designer Workflow</h3>
+                <h3>Implantologue ,Esthétique Dentaire et Fondateur de la Clinique</h3>
               </li>
               <li>
                 <p>
-                Dr Rabeh Belaib est dentiste et designer workflow, combinant ses compétences cliniques avec un savoir-faire en gestion des processus. Il met un accent particulier sur l’amélioration continue des soins dentaires, garantissant à chaque patient un traitement rapide et de qualité.
+                Dr Khaled Harous est un expert en implantologie dentaire, spécialisé dans les techniques modernes de pose d’implants pour restaurer la fonctionnalité et l’esthétique du sourire. En plus de son expertise en implantologie, il est également passionné par l'esthétique et la cosmétique dentaire, offrant des solutions avancées pour améliorer l'apparence du sourire de ses patients. Fondateur de l'Excellence Centre Dentaire, il est reconnu pour son approche personnalisée et son dévouement à offrir des soins de qualité.
                 </p>
               </li>
               <li>
                 <h3>Disponibilités:</h3>
                 <p>
                   {" "}
-                  Les jours de travail: Tous les jours
+                  Les jours de travail: Tous les jourd sauf jeudi
                   <br />
                   Horaires de travail: De 08.00 a 18.00
                 </p>
@@ -301,7 +295,8 @@ function Docteur1() {
                 </div>
               </div>
             </div>
-    </div></>
+    </div>    </>
+
   );
 }
 

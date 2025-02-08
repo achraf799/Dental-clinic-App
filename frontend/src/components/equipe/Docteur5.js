@@ -1,50 +1,56 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./Style.css";
-import dr26 from "../../../assets/dr26.png";
-import docteurimg from "../../../assets/dc2.png";
+import "./Styledr.css";
+import dr26 from "../../assets/dr26.png";
+import docteurimg from "../../assets/dc6.png";
 import { Helmet } from 'react-helmet';
 
-import logo from "../../../assets/navlogo.png";
+import logo from "../../assets/navlogo.png";
+
 
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function Docteur1() {
-    const handleReservationClick = () => {
-        console.log("Reservation button clicked!");
-        // Add navigation or other logic here
-      };
+  const handleReservationClick = () => {
+    console.log("Reservation button clicked!");
+    // Add navigation or other logic here
+  };
   return (
     <>
-      <Helmet>
-        <title>Dr. Khaled Harous - Implantologue à Ngaous, Batna</title>
-        <meta name="description" content="Découvrez le Dr. Khaled Harous, un implantologue expérimenté et fondateur de l'Excellence Centre Dentaire à Ngaous, Batna. Prenez rendez-vous pour des soins dentaires de qualité." />
-        <meta name="keywords" content="Dr Khaled Harous, implantologue, Ngaous, Batna, Algérie, soins dentaires, implants, esthétique dentaire" />
-        {/* Schema.org markup for a person */}
-        
-        <script type="application/ld+json">
+    <Helmet>
+      <title>Dr Wiem Lekhmamara - Dentiste et Designer Workflow à Excellence Centre Dentaire</title>
+      <meta
+        name="description"
+        content="Découvrez le parcours et les compétences du Dr Wiem Lekhmamara, dentiste et designer workflow à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
+      />
+      <meta
+        name="keywords"
+        content="Dr Wiem Lekhmamara, dentiste, designer workflow, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
+      />
+      <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Dr. Khaled Harous",
-            "jobTitle": "Implantologue",
-            "worksFor": {
-              "@type": "Organization",
-              "name": "Excellence Centre Dentaire"
-            },
-            "address": {
+          "@type": "Person",
+          name: "Dr Wiem Lekhmamara",
+          jobTitle: "Dentiste et Designer Workflow",
+          worksFor: {
+            "@type": "MedicalClinic",
+            name: "Excellence Centre Dentaire",
+            address: {
               "@type": "PostalAddress",
-              "streetAddress": "Votre Adresse",
-              "addressLocality": "Ngaous",
-              "addressRegion": "Batna",
-              "postalCode": "05000",
-              "addressCountry": "Algérie"
-            }
+              streetAddress: "Votre Adresse",
+              addressLocality: "Ngaous",
+              addressRegion: "Batna",
+              postalCode: "05000",
+              addressCountry: "Algérie",
+            },
+            telephone: "+213 663 535 252",
+            url: "https://ecd-full-website.vercel.app/docteurs/docteur1",
+          },
         })}
       </script>
-      </Helmet>
+    </Helmet>
     <div className="Docteur1">
       <div className="Docteur1-container1">
         <img src={dr26} alt="Docteur1" />
@@ -56,38 +62,43 @@ function Docteur1() {
         </div>
       </div>
       <div className="Docteur1-container2">
-        <h1>Dr Khaled HAROUS</h1>
+        <h1>Dr Wiem Lekhmamara</h1>
         <div className="Docteur1-container2-row">
           <div className="Docteur1-container2-row-img">
             <img src={docteurimg} alt="Equipe" />
             <a
-          href="https://wa.me/213663535252"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-            <button
-            className="reservation-buttom-dr1"
-            onClick={handleReservationClick}
-          >
-            <p>Prenez votre rendez-vous</p>
-          </button></a>
+              href="https://wa.me/213663535252"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                className="reservation-buttom-dr1"
+                onClick={handleReservationClick}
+              >
+                <p>Prenez votre rendez-vous</p>
+              </button>
+            </a>
           </div>
           <div className="Docteur1-container2-row-text">
-            <h2>Dr Khaled HAROUS</h2>
+            <h2>Dr Wiem Lekhmamara</h2>
             <ul>
               <li>
-                <h3>Implantologue ,Esthétique Dentaire et Fondateur de la Clinique</h3>
+                <h3>Dentiste et Designer Workflow</h3>
               </li>
               <li>
                 <p>
-                Dr Khaled Harous est un expert en implantologie dentaire, spécialisé dans les techniques modernes de pose d’implants pour restaurer la fonctionnalité et l’esthétique du sourire. En plus de son expertise en implantologie, il est également passionné par l'esthétique et la cosmétique dentaire, offrant des solutions avancées pour améliorer l'apparence du sourire de ses patients. Fondateur de l'Excellence Centre Dentaire, il est reconnu pour son approche personnalisée et son dévouement à offrir des soins de qualité.
+                  Dr Wiem Lekhmamara est dentiste et designer workflow, alliant
+                  son expertise dentaire à une approche innovante de la gestion
+                  des processus de soins. Elle s’engage à offrir une expérience
+                  patient fluide et optimisée grâce à la conception de flux de
+                  travail modernes et efficaces.
                 </p>
               </li>
               <li>
                 <h3>Disponibilités:</h3>
                 <p>
                   {" "}
-                  Les jours de travail: Tous les jourd sauf jeudi
+                  Les jours de travail: Tous les jours
                   <br />
                   Horaires de travail: De 08.00 a 18.00
                 </p>
@@ -295,8 +306,7 @@ function Docteur1() {
                 </div>
               </div>
             </div>
-    </div>    </>
-
+    </div></>
   );
 }
 

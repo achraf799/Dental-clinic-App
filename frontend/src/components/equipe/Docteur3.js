@@ -1,11 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./Style.css";
-import dr26 from "../../../assets/dr26.png";
-import docteurimg from "../../../assets/dc4.png";
+import "./Styledr.css";
+import dr26 from "../../assets/dr26.png";
+import docteurimg from "../../assets/dc4.png";
 import { Helmet } from 'react-helmet';
 
-import logo from "../../../assets/navlogo.png";
+import logo from "../../assets/navlogo.png";
+
 
 import "swiper/css/bundle";
 import "swiper/css/pagination";

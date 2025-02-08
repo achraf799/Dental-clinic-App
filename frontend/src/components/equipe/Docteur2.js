@@ -1,11 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import "./Style.css";
-import dr26 from "../../../assets/dr26.png";
-import docteurimg from "../../../assets/dc6.png";
+import "./Styledr.css";
+import dr26 from "../../assets/dr26.png";
+import docteurimg from "../../assets/dc3.png";
 import { Helmet } from 'react-helmet';
 
-import logo from "../../../assets/navlogo.png";
+import logo from "../../assets/navlogo.png";
+
 
 import "swiper/css/bundle";
 import "swiper/css/pagination";
@@ -19,21 +20,21 @@ function Docteur1() {
   return (
     <>
     <Helmet>
-      <title>Dr Wiem Lekhmamara - Dentiste et Designer Workflow à Excellence Centre Dentaire</title>
+      <title>Dr Nahed Amzel - Omnipraticienne à Excellence Centre Dentaire</title>
       <meta
         name="description"
-        content="Découvrez le parcours et les compétences du Dr Wiem Lekhmamara, dentiste et designer workflow à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
+        content="Découvrez le parcours et les compétences du Dr Nahed Amzel, omnipraticienne à Excellence Centre Dentaire. Prenez rendez-vous dès maintenant à Ngaous, Batna."
       />
       <meta
         name="keywords"
-        content="Dr Wiem Lekhmamara, dentiste, designer workflow, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
+        content="Dr Nahed Amzel, omnipraticienne, dentiste, soins dentaires, Ngaous, Batna, Algérie, prévention dentaire, consultation dentaire"
       />
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Dr Wiem Lekhmamara",
-          jobTitle: "Dentiste et Designer Workflow",
+          name: "Dr Nahed Amzel",
+          jobTitle: "Omnipraticienne",
           worksFor: {
             "@type": "MedicalClinic",
             name: "Excellence Centre Dentaire",
@@ -62,7 +63,7 @@ function Docteur1() {
         </div>
       </div>
       <div className="Docteur1-container2">
-        <h1>Dr Wiem Lekhmamara</h1>
+        <h1>Dr Nahed Amzel</h1>
         <div className="Docteur1-container2-row">
           <div className="Docteur1-container2-row-img">
             <img src={docteurimg} alt="Equipe" />
@@ -80,27 +81,27 @@ function Docteur1() {
             </a>
           </div>
           <div className="Docteur1-container2-row-text">
-            <h2>Dr Wiem Lekhmamara</h2>
+            <h2>Dr Nahed Amzel</h2>
             <ul>
               <li>
-                <h3>Dentiste et Designer Workflow</h3>
+                <h3>Omnipraticienne</h3>
               </li>
               <li>
                 <p>
-                  Dr Wiem Lekhmamara est dentiste et designer workflow, alliant
-                  son expertise dentaire à une approche innovante de la gestion
-                  des processus de soins. Elle s’engage à offrir une expérience
-                  patient fluide et optimisée grâce à la conception de flux de
-                  travail modernes et efficaces.
+                  Dr Nahed Amzel est une omnipraticienne passionnée par la
+                  médecine générale. Elle se distingue par son écoute attentive
+                  et sa capacité à offrir des soins complets et adaptés à chaque
+                  patient, avec un focus particulier sur la prévention et le
+                  suivi médical personnalisé.
                 </p>
               </li>
               <li>
                 <h3>Disponibilités:</h3>
                 <p>
                   {" "}
-                  Les jours de travail: Tous les jours
+                  Les jours de travail: Tous les jours sauf mardi
                   <br />
-                  Horaires de travail: De 08.00 a 18.00
+                  Horaires de travail: De 08.00 a 15.30
                 </p>
               </li>
             </ul>
