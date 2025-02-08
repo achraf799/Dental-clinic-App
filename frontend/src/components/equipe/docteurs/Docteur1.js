@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./Style.css";
-import dr26 from "../../../assets/cl26.png";
+import dr26 from "../../../assets/dr26.png";
 import docteurimg from "../../../assets/dc2.png";
 import { Helmet } from 'react-helmet';
 

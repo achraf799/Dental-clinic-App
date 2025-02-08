@@ -164,10 +164,7 @@ function App() {
           <Route path="/clinique" element={<Clinique />} />
           <Route path="/equipe" element={<Equipe />} />
           <Route path="/traitements" element={<Traitements />} />
-          <Route
-            path="/contact"
-            element={<Contact onAddFeedback={addFeedback} />}
-          />
+          <Route path="/contact" element={<Contact onAddFeedback={addFeedback} />}/>
           <Route path="/docteurs/docteur1" element={<Docteur1 />} />
           <Route path="/docteurs/docteur2" element={<Docteur2 />} />
           <Route path="/docteurs/docteur3" element={<Docteur3 />} />
