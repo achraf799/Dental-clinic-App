@@ -116,24 +116,44 @@ function App() {
       <script type="application/ld+json">
     {`
       "@context": "https://schema.org",
-    "@type": "Dentist",
-    "name": "Excellence Centre Dentaire",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "N'gaous Batna Setif Ainezel Merouana, Aintouta",
-      "addressLocality": "N'gaous",
-      "addressRegion": "Batna",
-      "postalCode": "05000",
-      "addressCountry": "DZ"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "35.5534458",
-      "longitude": "5.6085307"
-    },
-    "telephone": "+213663535252",
-    "url": "https://www.excellencecentredentaire.com"
-  };
+          "@type": "Dentist",
+          "@id": "https://www.excellencecentredentaire.com/#dentist",
+          "name": "Excellence Centre Dentaire",
+          "image": "https://www.excellencecentredentaire.com/your-image.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rue principale",
+            "addressLocality": "N'gaous",
+            "addressRegion": "Batna",
+            "postalCode": "05000",
+            "addressCountry": "DZ"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 35.5534458,
+            "longitude": 5.6085307
+          },
+          "telephone": "+213663535252",
+          "url": "https://www.excellencecentredentaire.com",
+          "priceRange": "$$",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:00",
+              "closes": "18:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Saturday",
+              "opens": "08:00",
+              "closes": "13:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/excellencecentredentaire/",
+            "https://www.instagram.com/excellencecentredentaire/"
+          ]
     `}
   </script>
       </Helmet>
