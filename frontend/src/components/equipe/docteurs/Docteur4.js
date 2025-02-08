@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "./Style.css";
-import cl26 from "../../../assets/cl26.png";
-import dc5 from "../../../assets/dc5.png";
+import dr26 from "../../../assets/cl26.png";
+import docteurimg from "../../../assets/dc5.png";
 import { Helmet } from 'react-helmet';
 
 import logo from "../../../assets/navlogo.png";
@@ -53,7 +53,7 @@ function Docteur1() {
     </Helmet>
     <div className="Docteur1">
       <div className="Docteur1-container1">
-        <img src={cl26} alt="Docteur1" />
+        <img src={dr26} alt="Docteur1" />
         <div className="Docteur1-container11">
           <div className="Docteur1-text">
             <h1>Notre équipe</h1>
@@ -65,7 +65,7 @@ function Docteur1() {
         <h1>Dr Rabeh Belaib</h1>
         <div className="Docteur1-container2-row">
           <div className="Docteur1-container2-row-img">
-            <img src={dc5} alt="Equipe" />
+            <img src={docteurimg} alt="Equipe" />
             <a
           href="https://wa.me/213663535252"
           target="_blank"
