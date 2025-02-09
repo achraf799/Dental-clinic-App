@@ -102,7 +102,7 @@ function Contact({ onAddFeedback }) {
             </form>
             
             <div className="avis-bar"></div>
-            <a href="https://maps.app.goo.gl/W221Ed5pegcBmxZf6" target="_blank">
+            <a href="https://g.page/r/CVOeFltIcuRyEBM/review" target="_blank">
               <div className="avis-googlemaps">
                 <p>
                   Donnez-nous votre avis sur <span>Google Maps</span>, cela nous
