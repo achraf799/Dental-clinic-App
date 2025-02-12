@@ -251,5 +251,97 @@ flex-direction: column;
 
 
 
+Home
+Support Database
+Contact Us
+Your Account
+Home
+Manage DNS
+?
+MANAGE DOMAINS
+Subdomains
+Manage DNS
+Domain Contacts
+WHOIS Information
+Nameservers
+DNSSEC Protection
+Transfer Away
+Manage DNS
+Edit, add and reset DNS records.
+
+DNS Records for excellencecentredentaire.com
+It is important that you understand the effect of any DNS changes before you make them. For example, an incorrect change to your A, AAAA or CNAME records could break your website.Having trouble? You can always reset to defaults which will ensure your domain points back to us.
+
+Preconfigured Settings(Optional) 
+Name	Type	Data	Priority	 
+excellencecentredentaire.com
+A
+185.151.30.220
+ 	
+excellencecentredentaire.com
+A
+76.76.21.21
+ 	
+*.excellencecentredentaire.com
+A
+185.151.30.220
+ 	
+excellencecentredentaire.com
+AAAA
+2a07:7800::220
+ 	
+*.excellencecentredentaire.com
+AAAA
+2a07:7800::220
+ 	
+autodiscover.excellencecentredentaire.com
+CNAME
+autodiscover.stackmail.com.
+ 	
+ftp.excellencecentredentaire.com
+CNAME
+ftp.gb.stackcp.com
+ 	
+imap.excellencecentredentaire.com
+CNAME
+imap.stackmail.com.
+ 	
+mail.excellencecentredentaire.com
+CNAME
+mail.stackmail.com.
+ 	
+pop3.excellencecentredentaire.com
+CNAME
+pop3.stackmail.com.
+ 	
+smtp.excellencecentredentaire.com
+CNAME
+smtp.stackmail.com.
+ 	
+webmail.excellencecentredentaire.com
+CNAME
+webmail.stackcp.com.
+ 	
+www.excellencecentredentaire.com
+CNAME
+cname.vercel-dns.com.
+ 	
+excellencecentredentaire.com
+MX
+mx.stackmail.com.
+10
+excellencecentredentaire.com
+TXT
+v=spf1 include:spf.stackmail.com a mx -all
+ 	
+www
+
+0.0.0.0
+ 	
+Please note: Changes to your DNS can take up to 24 hours to fully propagate across the internet.
+
+Home
+Preferences
+Contact Us
 
 
