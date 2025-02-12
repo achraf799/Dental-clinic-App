@@ -42,7 +42,11 @@ code {
   width: 60px;
   height: 60px;
 }
-
+.hidden-text {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
 .map-btn {
   position: fixed;
   bottom: 150px;

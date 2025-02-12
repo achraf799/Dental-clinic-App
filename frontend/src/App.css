@@ -34,6 +34,11 @@ html {
 .App-link {
   color: #61dafb;
 }
+.hidden-text {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
 
 
 
