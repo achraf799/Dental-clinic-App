@@ -50,7 +50,25 @@ function Equipe() {
       </script>
     </Helmet>
     <div className="Equipe">
-    
+    <div className="hidden-text">
+    <h1>dentiste setif</h1>
+    <h1>dentiste Algerie</h1>
+    <h1>dentiste N'gaous</h1>
+    <h1>dentiste Ngaous</h1>
+    <h1>dentiste Ngaous Batna</h1>
+    <h1>dentiste Biskra</h1>
+    <h1>dentiste Batna</h1>
+    <h1>dentiste Khenchlaa</h1>
+    <h1>dentiste Constantine</h1>
+    <h1>dentiste Oum El Bouaghi</h1>
+    <h1>dentiste ngaous </h1>
+    <h1>dentiste Batna</h1>
+    <h1>dentiste M'sila</h1>
+    <h1>dentiste Msila</h1>
+    <h1>dentiste Alger</h1>
+    <h1>dentiste Algerie</h1>
+    <h1>soins dentaires</h1>
+    <h1>orthodontie, implants, esthétique dentaire, chirurgie orale, blanchiment, hygiène dentaire, urgence dentaire, Algérie</h1></div>
       <div className="Equipe-container1">
         <img src={cl26} alt="Equipe" />
         <div className="Equipe-container11">
