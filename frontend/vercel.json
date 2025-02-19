@@ -3,6 +3,10 @@
     {
       "src": "/[^.]+",
       "dest": "/"
+    },
+    {
+      "src": "/:path*.php",
+      "dest": "https://excellencecentredentaire.com/:path*.php"
     }
   ]
 }
