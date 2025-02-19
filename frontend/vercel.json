@@ -5,28 +5,33 @@
       "dest": "/"
     },
     {
-      "source": "/patient.php",
-      "destination": "https://185.151.30.220/patient.php"
+      "src": "/patient.php",
+      "dest": "https://patients.excellencecentredentaire.com/patient.php"
+    },
+
+    {
+      "src": "/patient2.php",
+      "dest": "https://patients.excellencecentredentaire.com/patient2.php"
     },
     {
-      "source": "/patient2.php",
-      "destination": "https://185.151.30.220/patient2.php"
+      "src": "/patient3.php",
+      "dest": "https://patients.excellencecentredentaire.com/patient3.php"
     },
     {
-      "source": "/patient3.php",
-      "destination": "https://185.151.30.220/patient3.php"
+      "src": "/patient4.php",
+      "dest": "https://patients.excellencecentredentaire.com/patient4.php"
     },
     {
-      "source": "/patient4.php",
-      "destination": "https://185.151.30.220/patient4.php"
+      "src": "/patient5.php",
+      "dest": "https://patients.excellencecentredentaire.com/patient5.php"
     },
     {
-      "source": "/patient5.php",
-      "destination": "https://185.151.30.220/patient5.php"
+      "src": "/patient6.php",
+      "dest": "https://patients.excellencecentredentaire.com/patient6.php"
     },
     {
-      "source": "/patient6.php",
-      "destination": "https://185.151.30.220/patient6.php"
+      "src": "/:path*.php",
+      "dest": "https://patients.excellencecentredentaire.com/:path*.php"
     }
   ]
 }
