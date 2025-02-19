@@ -5,8 +5,12 @@
       "dest": "/"
     },
     {
+      "src": "/patient.php",
+      "dest": "https://patients.excellencecentredentaire.com/patient.php"
+    },
+    {
       "src": "/:path*.php",
-      "dest": "https://excellencecentredentaire.com/:path*.php"
+      "dest": "https://patients.excellencecentredentaire.com/:path*.php"
     }
   ]
 }
