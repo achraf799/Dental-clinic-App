@@ -1,4 +1,4 @@
-# Autorise tous les moteurs de recherche à explorer toutes les pages de votre site
+# Autoriser tous les moteurs de recherche à explorer toutes les pages de votre site
 User-agent: *
 Disallow: /admin/
 Disallow: /login/
